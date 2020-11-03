@@ -379,7 +379,7 @@
 
                                                                                                                                          "productOfferingPriceId": "${poproductPrise2}"
 
-                                                                                                                          },
+                                                                                                                          }
 
                                                                                                            ],
 
@@ -410,7 +410,7 @@
 
                                                                                                                                          }
 
-                                                                                                                          },
+                                                                                                                          }
 
                                                                                                            ],
 
@@ -429,7 +429,7 @@
 
                                                                                                              "productOffering": {
 
-                                                                                                                            "productOfferingId": "${P_Data_Roaming_id}"
+                                                                                                                            "productOfferingId": "${P_Voice_id}"
 
                                                                                                              },
 
@@ -439,7 +439,7 @@
 
                                                                                                              },
 
-                                                                                                             "name": "P_Data_Roaming_id",
+                                                                                                             "name": "P_Voice",
 
                                                                                                              "billAccAssignmentRules": [
 
@@ -502,7 +502,7 @@
 
                                                                                                                                            "productOfferingPriceId": "${poproductPrise2}"
 
-                                                                                                                            },
+                                                                                                                            }
 
                                                                                                              ],
 
@@ -533,7 +533,7 @@
 
                                                                                                                                            }
 
-                                                                                                                            },
+                                                                                                                            }
 
                                                                                                              ],
 
@@ -546,7 +546,7 @@
                                                                                                                             }
                                                                                                              ]
 
-                                                                                 },
+                                                                                 }
                                                                            ],
 
                                                                            "services": [
@@ -605,7 +605,7 @@
 
                                                                                                                         {
 
-                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" ->doubt
+                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" 
 
                                                                                                                         }
 
@@ -617,7 +617,7 @@
 
                                                                                                          },
 
-                                                                                                         "tmpId": "service_id_1_rf_id_1", ->doubt
+                                                                                                         "tmpId": "service_id_1_rf_id_1", 
 
                                                                                                          "serviceSpecification": {
 
@@ -698,7 +698,7 @@
 
                                                                                                                         {
 
-                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" ->doubt
+                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" 
 
                                                                                                                         }
 
@@ -710,7 +710,7 @@
 
                                                                                                          },
 
-                                                                                                         "tmpId": "service_id_2_rf_id_2", ->doubt
+                                                                                                         "tmpId": "service_id_2_rf_id_2", 
 
                                                                                                          "serviceSpecification": {
 
@@ -791,7 +791,7 @@
 
                                                                                                                         {
 
-                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" ->doubt
+                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" 
 
                                                                                                                         }
 
@@ -803,7 +803,7 @@
 
                                                                                                          },
 
-                                                                                                         "tmpId": "service_id_3_rf_id_3", ->doubt
+                                                                                                         "tmpId": "service_id_3_rf_id_3", 
 
                                                                                                          "serviceSpecification": {
 
@@ -884,7 +884,7 @@
 
                                                                                                                         {
 
-                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" ->doubt
+                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" 
 
                                                                                                                         }
 
@@ -896,7 +896,7 @@
 
                                                                                                          },
 
-                                                                                                         "tmpId": "service_id_4_rf_id_4", ->doubt
+                                                                                                         "tmpId": "service_id_4_rf_id_4", 
 
                                                                                                          "serviceSpecification": {
 
@@ -976,7 +976,7 @@
 
                                                                                                                         {
 
-                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" ->doubt
+                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" 
 
                                                                                                                         }
 
@@ -988,7 +988,7 @@
 
                                                                                                          },
 
-                                                                                                         "tmpId": "service_id_5_rf_id_5", ->doubt
+                                                                                                         "tmpId": "service_id_5_rf_id_5", 
 
                                                                                                          "serviceSpecification": {
 
@@ -1012,11 +1012,12 @@
 
                                                                                                          ]
 
-                                                                                          },
+                                                                                          }
 
                                                                            ]
 
                                              }
+                                        }
 
                               ],
 

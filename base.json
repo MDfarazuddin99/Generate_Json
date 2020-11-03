@@ -1,0 +1,519 @@
+{
+
+  "resource": {
+
+                 "billAccAssignmentRules": [
+
+                                {
+
+                                               "priceTypes": [
+
+                                                              "any"
+
+                                               ],
+
+                                               "validFor": {
+
+                                                              "start": "${startDate}"
+
+                                               },
+
+                                               "tmpId": "tmp_billAccAssignmentRule",
+
+                                               "tmpAccountId": "tmp_atomicAccountId"
+
+                                }
+
+                 ],
+
+                 "validFor": {
+
+                                "start": "${startDate}"
+
+                 },
+
+                 "externalId": "${msisdn}",
+
+                 "agreements": [
+
+                                {
+
+                                               "contract": {
+
+                                                              "billAccAssignmentRules": [
+
+                                                                             {
+
+                                                                                            "validFor": {
+
+                                                                                                           "start": "${startDate}"
+
+                                                                                            },
+
+                                                                                            "tmpId": "tmp_billAccAssignmentRule"
+
+                                                                             }
+
+                                                              ],
+
+                                                              "validFor": {
+
+                                                                             "start": "${startDate}"
+
+                                                              },
+
+                                                              "paymentContext": {
+
+                                                                             "paymentContextId": "Postpaid"
+
+                                                              },
+
+                                                              "resources": [
+
+                                                                             {
+
+                                                                                            "logicalResource": {
+
+                                                                                                           "validFor": {
+
+                                                                                                                          "start": "${startDate}"
+
+                                                                                                           },
+
+                                                                                                           "tmpId": "b9a75f1916de4713af4ed349e75add84",
+
+                                                                                                           "resourceNumber": "${msisdn}",
+
+                                                                                                           "resourceType": " ",
+
+                                                                                                           "resourceSpec": {
+
+                                                                                                                          "resourceSpecId": "55be0aa4-a00b-4e20-a9da-f0b69fb3e8b1"
+
+                                                                                                           }
+
+                                                                                            }
+
+                                                                             }
+
+                                                              ],
+
+                                                              "statuses": [
+
+                                                                             {
+
+                                                                                            "validFor": {
+
+                                                                                                           "start": "${startDate}"
+
+                                                                                            },
+
+                                                                                            "status": "ContractActive"
+
+                                                                             }
+
+                                                              ],
+
+                                                              "products": [
+
+                                                              ],
+
+                                                              "services": [
+                                                                
+                                                              ]
+
+                                               }
+
+                                }
+
+                 ],
+
+                 "statuses": [
+
+                                {
+
+                                               "validFor": {
+
+                                                              "start": "${startDate}"
+
+                                               },
+
+                                               "status": "CustomerActive"
+
+                                }
+
+                 ],
+
+                 "billingAccounts": [
+
+                                {
+
+                                               "contactMediumAssociations": [
+
+                                                              {
+
+                                                                             "contactMedium": {
+
+                                                                                            "tmpContactMediumId": "tempId_postpaid_contact_media"
+
+                                                                             },
+
+                                                                             "validFor": {
+
+                                                                                            "start": "${startDate}"
+
+                                                                             },
+
+                                                                             "contactRole": {
+
+                                                                                            "contactRoleId": "Billing"
+
+                                                                             },
+
+                                                                             "language": {
+
+                                                                                            "languageId": "en"
+
+                                                                             }
+
+                                                              }
+
+                                               ],
+
+                                               "customerBillSpecifications": [
+
+                                                              {
+
+                                                                             "billSpec": {
+
+                                                                                            "billSpecId": "d8dc0644-5d07-4ae4-9ae6-8acdc8c4fa3c" 
+
+                                                                             },
+
+                                                                             "customerDocSpecs": [
+
+                                                                                            {
+
+                                                                                                           "docSpecId": "0db86207-0ef7-42d7-9c9e-5116b4e3697e", 
+
+                                                                                                           "customerDocFormatSpecs": [
+
+                                                                                                                          {
+
+                                                                                                                                         "docFormatSpecId": "b5bf739e-e63b-4296-87a7-e8eeb068f2d1" 
+
+                                                                                                                          }
+
+                                                                                                           ],
+
+                                                                                                           "validFor": {
+
+                                                                                                                          "start": "${startDate}"
+
+                                                                                                           }
+
+                                                                                            }
+
+                                                                             ],
+
+                                                                             "validFor": {
+
+                                                                                            "start": "${startDate}"
+
+                                                                             },
+
+                                                                             "customerBillingCycleSpecifications": [
+
+                                                                                            {
+
+                                                                                                           "validFor": {
+
+                                                                                                                          "start": "${startDate}"
+
+                                                                                                           },
+
+                                                                                                           "billingCycleSpec": {
+
+                                                                                                                          "billingCycleSpecId": "${BCS_Id}"
+
+                                                                                                           }
+
+                                                                                            }
+
+                                                                             ]
+
+                                                              }
+
+                                               ],
+
+                                               "validFor": {
+
+                                                              "start": "${startDate}"
+
+                                               },
+
+                                               "characteristicValues": [
+
+                                                              {
+
+                                                                             "characteristic": {
+
+                                                                                            "characteristicId": "fcec61e12d41a4d4bb59531f7036ee5a" 
+
+                                                                             },
+
+                                                                             "name": "CUSTOMER_TAX_CATEGORY",
+
+                                                                             "values": [
+
+                                                                                            {
+
+                                                                                                           "charValueRef": "idCsvPossibleValueRange",
+
+                                                                                                           "value": "Student", 
+
+                                                                                                           "validFor": {
+
+                                                                                                                          "start": "${startDate}"
+
+                                                                                                           }
+
+                                                                                            }
+
+                                                                             ]
+
+                                                              },
+
+                                                              {
+
+                                                                             "characteristic": {
+
+                                                                                            "characteristicId": "fea7ae6257dee4f5b9159b0002029b0a" 
+
+                                                                             },
+
+                                                                             "name": "TAX_JURISDICTION_CODE",
+
+                                                                             "values": [
+
+                                                                                            {
+
+                                                                                                           "charValueRef": "idCsvPossibleValueRange",
+
+                                                                                                           "value": "HAR", 
+
+                                                                                                           "validFor": {
+
+                                                                                                                          "start": "${startDate}"
+
+                                                                                                           }
+
+                                                                                            }
+
+                                                                             ]
+
+                                                              }
+
+                                               ],
+
+                                               "buckets": [
+
+                                                              {
+
+                                                                             "bucketSpec": {
+
+                                                                                            "bucketSpecId": "2c932131-1adc-4962-8019-a7c79cbe0b31" 
+
+                                                                             },
+
+                                                                             "validFor": {
+
+                                                                                            "start": "${startDate}"
+
+                                                                             },
+
+                                                                             "isBCAligned": [
+
+                                                                                            {
+
+                                                                                                           "validFor": {
+
+                                                                                                                          "start": "${startDate}"
+
+                                                                                                           },
+
+                                                                                                           "boolValue": true
+
+                                                                                            }
+
+                                                                             ]
+
+                                                              }
+
+                                               ],
+
+                                               "tmpId": "tmp_atomicAccountId",
+
+                                               "statuses": [
+
+                                                              {
+
+                                                                             "validFor": {
+
+                                                                                            "start": "${startDate}"
+
+                                                                             },
+
+                                                                             "status": "BillingAccountActive"
+
+                                                              }
+
+                                               ],
+
+                                               "billingAccountSpec": {
+
+                                                              "billingAccountSpecId": "39bde14a-f141-4896-9948-0fb0201fd1ba" 
+
+                                               }
+
+                                }
+
+                 ],
+
+                 "relatedParty": {
+
+                                "contactMedia": [
+
+                                               {
+
+                                                              "tmpId": "tempId_postpaid_contact_media",
+
+                                                              "contactMediumSpecificationId": "CA86AFEEDDC848948B0AD552B80CC6DB",
+
+                                                              "characteristicValues": [
+
+                                                                             {
+
+                                                                                            "characteristic": {
+
+                                                                                                           "characteristicId": "D62287ECC6204079A8578EEEED101C9B"
+
+                                                                                            },
+
+                                                                                            "values": [
+
+                                                                                                           {
+
+                                                                                                                          "charValueRef": "075F7C8761414B45AEBA185F94A11997",
+
+                                                                                                                          "value": "SMS",
+
+                                                                                                                          "validFor": {
+
+                                                                                                                                         "start": "${startDate}"
+
+                                                                                                                          }
+
+                                                                                                           }
+
+                                                                                            ]
+
+                                                                             },
+
+                                                                             {
+
+                                                                                            "characteristic": {
+
+                                                                                                           "characteristicId": "58E0277FDF1C442BA106FA529E93F257"
+
+                                                                                            },
+
+                                                                                            "values": [
+
+                                                                                                           {
+
+                                                                                                                          "charValueRef": "811E39B5A63841B793C8D0FED61114BB",
+
+                                                                                                                          "value": "${msisdn}",
+
+                                                                                                                          "validFor": {
+
+                                                                                                                                         "start": "${startDate}"
+
+                                                                                                                          }
+
+                                                                                                           }
+
+                                                                                            ]
+
+                                                                             }
+
+                                                              ],
+
+                                                              "hierarchicalType": "Atomic",
+
+                                                              "validFor": {
+
+                                                                             "start": "${startDate}"
+
+                                                              }
+
+                                               }
+
+                                ],
+
+                                "validFor": {
+
+                                               "start": "${startDate}"
+
+                                },
+
+                                "partitionId": "1",
+
+                                "tmpId": "tmp_party",
+
+                                "partyNames": [
+
+                                               {
+
+                                                              "givenNames": "Ankit", 
+
+                                                              "familyNames": "Brown", 
+
+                                                              "validFor": {
+
+                                                                             "start": "${startDate}"
+
+                                                              }
+
+                                               }
+
+                                ],
+
+                                "statuses": [
+
+                                               {
+
+                                                              "validFor": {
+
+                                                                             "start": "${startDate}"
+
+                                                              },
+
+                                                              "status": "PartyActive"
+
+                                               }
+
+                                ]
+
+                 },
+
+                 "party": {
+
+                                "tmpId": "tmp_party"
+
+                 }
+
+  }
+
+}

@@ -1,0 +1,39 @@
+import groovy.json.JsonSlurper 
+
+def response = testRunner.testCase.testSteps["Get all cfss"].testRequest.response.contentAsString
+
+ 
+
+def slurper = new JsonSlurper()
+
+def json = slurper.parseText response
+
+ 
+
+def j = 1
+
+count = testRunner.testCase.testSteps["WorkData"].getPropertyValue('cfssCount')
+
+for (int i = 1; i <= count; i++) {
+
+               cfssId = testRunner.testCase.testSteps["WorkData"].getPropertyValue('cfssId' + i)
+
+               json.each{
+
+                              if (it.id == cfssId) {
+
+                                             it.versions[0].relationsTo.each{
+
+                                                            if (it.targetType == 'ResourceFacingServiceSpecification'){
+
+                                                                           testRunner.testCase.testSteps["WorkData"].setPropertyValue('rfssId' + j, it.targetId)
+
+                                                                           j++                         }
+
+                                             }
+
+                              }
+
+               }
+
+}

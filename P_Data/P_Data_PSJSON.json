@@ -1,0 +1,1465 @@
+{
+
+    "productSpecificationTypes": ["BASE"],
+ 
+    "id": "0a5b89dd-ca81-4336-ba85-cc92a069e081",
+ 
+    "name": "P_Data_PS",
+ 
+    "description": "",
+ 
+    "versions": [   {
+ 
+       "timezoneType": "HTZ",
+ 
+       "psPolicyRefs":       [
+ 
+                   {
+ 
+             "id": "b21c448527b832b430c75e7948a879b9",
+ 
+             "eventTriggerDetailsRelation":             {
+ 
+                "id": "be48e8fd69e47d1ace06b46d0c372603",
+ 
+                "sourceId": "0a5b89dd-ca81-4336-ba85-cc92a069e081",
+ 
+                "sourceType": "ProductSpecification",
+ 
+                "sourceEntityPath": [               {
+ 
+                   "entityId": "b21c448527b832b430c75e7948a879b9",
+ 
+                   "entityType": "PSPolicyRef"
+ 
+                }],
+ 
+                "targetId": "8778053e-0940-4a07-a070-887d7661cd1d",
+ 
+                "targetType": "EventTriggerDetails",
+ 
+                "targetEntityPath": [],
+ 
+                "relationType": "DESIGN"
+ 
+             }
+ 
+          },
+ 
+                   {
+ 
+             "id": "bc8666924a359a0a413090cdd0ac3035",
+ 
+             "eventTriggerDetailsRelation":             {
+ 
+                "id": "f951e6ae14e02520dbf3583cfbb7da63",
+ 
+                "sourceId": "0a5b89dd-ca81-4336-ba85-cc92a069e081",
+ 
+                "sourceType": "ProductSpecification",
+ 
+                "sourceEntityPath": [               {
+ 
+                   "entityId": "bc8666924a359a0a413090cdd0ac3035",
+ 
+                   "entityType": "PSPolicyRef"
+ 
+                }],
+ 
+                "targetId": "4a828b88-6279-48f0-8094-d2f0c42173f9",
+ 
+                "targetType": "EventTriggerDetails",
+ 
+                "targetEntityPath": [],
+ 
+                "relationType": "DESIGN"
+ 
+             }
+ 
+          }
+ 
+       ],
+ 
+       "lifecycleType": "System_Product",
+ 
+       "description": "",
+ 
+       "versionIdentifier": "1603947589669",
+ 
+       "validFor":       {
+ 
+          "from": "Beginning of time",
+ 
+          "to": "End of time"
+ 
+       },
+ 
+       "characteristics":       [
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Sets a message to send to the customer when the product is activated by a traffic event, \non instant activation or on future dated activation.",
+ 
+             "name": "ActivePeriodActivatedNotificationId",
+ 
+             "id": "e875ec67a8d744c1ea773936608c0e23",
+ 
+             "externalId": "activePeriodActivatedNotificationId",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "STRING",
+ 
+             "purpose": "ACTIVE_PERIOD_ACTIVATED_NOTIFICATION_ID",
+ 
+             "valueRegulator": "noPersonalization",
+ 
+             "canBeOverridden": true,
+ 
+            "possibleValues": [            {
+ 
+                "name": "Possible value range",
+ 
+                "id": "idCsvPossibleValueRange",
+ 
+                "externalId": "possibleValueRange",
+ 
+                "default": false,
+ 
+                "rangeInterval": "closed",
+ 
+                "valueFrom": "1",
+ 
+                "valueTo": "256",
+ 
+                "valueLinks": []
+ 
+             }],
+ 
+             "annotationList": [],
+ 
+             "limitSpecValueRange": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Defines the message to send to the customer when the product has expired.\n",
+ 
+             "name": "ActivePeriodExpiredNotificationId",
+ 
+             "id": "d30cc91683f4240089c730debcd85b8c",
+ 
+             "externalId": "activePeriodExpiredNotificationId",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "STRING",
+ 
+             "purpose": "ACTIVE_PERIOD_EXPIRED_NOTIFICATION_ID",
+ 
+             "valueRegulator": "noPersonalization",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues": [            {
+ 
+                "name": "Possible value range",
+ 
+                "id": "idCsvPossibleValueRange",
+ 
+                "externalId": "possibleValueRange",
+ 
+                "default": false,
+ 
+                "rangeInterval": "closed",
+ 
+                "valueFrom": "1",
+ 
+                "valueTo": "256",
+ 
+                "valueLinks": []
+ 
+             }],
+ 
+             "annotationList": [],
+ 
+             "limitSpecValueRange": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Defines the message to send to the customer when the product is about to reach the end of its active period.\nThis optional value must be set together with the Active Period Expiry Warning Time In Advance value,\nand cannot be set when active period expiry date is infinite.",
+ 
+             "name": "ActivePeriodExpiryWarningNotificationId",
+ 
+             "id": "daed07e23686b48c99cdfeab9a60cbce",
+ 
+             "externalId": "activePeriodExpiryWarningNotificationId",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "STRING",
+ 
+             "purpose": "ACTIVE_PERIOD_EXPIRY_WARNING_NOTIFICATION_ID",
+ 
+             "valueRegulator": "noPersonalization",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues": [            {
+ 
+                "name": "Possible value range",
+ 
+                "id": "idCsvPossibleValueRange",
+ 
+                "externalId": "possibleValueRange",
+ 
+                "default": false,
+ 
+                "rangeInterval": "closed",
+ 
+                "valueFrom": "1",
+ 
+                "valueTo": "256",
+ 
+                "valueLinks": []
+ 
+             }],
+ 
+             "annotationList": [],
+ 
+             "limitSpecValueRange": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+            "characteristics": [],
+ 
+             "description": "Defines the products activation expiry date.",
+ 
+             "name": "ActivePeriodExpiryDate",
+ 
+             "id": "d6312cd2b8f354ce49210c8a95a3ad15",
+ 
+             "externalId": "activePeriodExpiryDate",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "DATE_TIME",
+ 
+             "purpose": "ACTIVE_PERIOD_EXPIRYDATE",
+ 
+             "valueRegulator": "canBePersonalized",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues": [            {
+ 
+                "name": "Possible value range",
+ 
+                "id": "idCsvPossibleValueRange",
+ 
+                "externalId": "possibleValueRange",
+ 
+                "default": false,
+ 
+                "rangeInterval": "closed",
+ 
+                "valueFrom": "Beginning of time",
+ 
+                "valueTo": "End of time",
+ 
+                "valueLinks": []
+ 
+             }],
+ 
+             "annotationList": [],
+ 
+             "limitSpecValueRange": true,
+ 
+             "isPersonalizedValueTransferable": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Defines how the active period of the product starts. Note that this value is only useful to set when ActiveTriggerMethod is set to 'Traffic Independent'.",
+ 
+             "name": "ActivePeriodFormationTechnique",
+ 
+             "id": "b5e5b364345d04776be4b355848d7dd2",
+ 
+             "externalId": "activePeriodFormationTechnique",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "STRING",
+ 
+             "purpose": "ACTIVE_PERIOD_FORMATION_TECHNIQUE",
+ 
+             "valueRegulator": "selection",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues":             [
+ 
+                               {
+ 
+                   "name": "RelativeValue",
+ 
+                   "id": "relativeValue",
+ 
+                   "externalId": "relativeValue",
+ 
+                   "default": true,
+ 
+                   "value": "Relative",
+ 
+                   "valueLinks": []
+ 
+                },
+ 
+                               {
+ 
+                   "name": "absoluteValue",
+ 
+                   "id": "absoluteValue",
+ 
+                   "externalId": "absoluteValue",
+ 
+                   "default": false,
+ 
+                   "value": "Absolute",
+ 
+                   "valueLinks": []
+ 
+                }
+ 
+             ],
+ 
+             "annotationList": [],
+ 
+             "limitSpecValueRange": true,
+ 
+             "isPersonalizedValueTransferable": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Defines start date for when the product should be possible to activate.",
+ 
+             "name": "ActivePeriodStartDate",
+ 
+             "id": "f84914c6b2c084b8690fde345ad10ef2",
+ 
+             "externalId": "activePeriodStartDate",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "DATE_TIME",
+ 
+             "purpose": "ACTIVE_PERIOD_STARTDATE",
+ 
+             "valueRegulator": "canBePersonalized",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues": [            {
+ 
+                "name": "Possible value range",
+ 
+                "id": "idCsvPossibleValueRange",
+ 
+                "externalId": "possibleValueRange",
+ 
+                "default": false,
+ 
+                "rangeInterval": "closed",
+ 
+                "valueFrom": "Beginning of time",
+ 
+                "valueTo": "End of time",
+ 
+                "valueLinks": []
+ 
+             }],
+ 
+             "annotationList": [],
+ 
+             "limitSpecValueRange": true,
+ 
+             "isPersonalizedValueTransferable": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Describes how a product is activated.",
+ 
+             "name": "ActiveTriggerMethod",
+ 
+             "id": "c9f0b6d9506e144d49872a4e249bf16a",
+ 
+             "externalId": "activeTriggerMethod",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 1,
+ 
+             "valueType": "STRING",
+ 
+             "purpose": "ACTIVE_TRIGGER_METHOD",
+ 
+             "valueRegulator": "noPersonalization",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues":             [
+ 
+                               {
+ 
+                   "name": "trafficIndependent",
+ 
+                   "id": "trafficIndependent",
+ 
+                   "externalId": "trafficIndependent",
+ 
+                   "default": true,
+ 
+                   "value": "Traffic Independent",
+ 
+                   "valueLinks": []
+ 
+                },
+ 
+                               {
+ 
+                   "name": "firstTraffic",
+ 
+                   "id": "firstTraffic",
+ 
+                   "externalId": "firstTraffic",
+ 
+                   "default": false,
+ 
+                   "value": "First Traffic Event",
+ 
+                   "valueLinks": []
+ 
+                }
+ 
+             ],
+ 
+             "annotationList": [],
+ 
+             "limitSpecValueRange": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Defines the message to send to the customer when the product no longer can be activated by a traffic event.\nThis optional value can not be set on the product offering when the product has an infinite available period expiry date,\n or if the product is activated at a fixed date rather than by a traffic event.",
+ 
+             "name": "AvailablePeriodExpiredNotificationId",
+ 
+             "id": "b6340b4bed59f4087bdb1f128ac52589",
+ 
+             "externalId": "availablePeriodExpiredNotificationId",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "STRING",
+ 
+             "purpose": "AVAILABLE_PERIOD_EXPIRED_NOTIFICATION_ID",
+ 
+             "valueRegulator": "noPersonalization",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues": [            {
+ 
+                "name": "Possible value range",
+ 
+                "id": "idCsvPossibleValueRange",
+ 
+                "externalId": "possibleValueRange",
+ 
+                "default": false,
+ 
+                "rangeInterval": "closed",
+ 
+                "valueFrom": "1",
+ 
+                "valueTo": "256",
+ 
+                "valueLinks": []
+ 
+             }],
+ 
+             "annotationList": [],
+ 
+             "limitSpecValueRange": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Defines the message to send to the customer when the product is about to reach the end of its available period,\ni.e. when the product soon can't be activated any more.\nThis optional value must be set together with the Available Period Expiry Warning Time In Advance value, and cannot be set when available period expiry date is infinite or when the product is activated at a fixed date rather than by a traffic event.",
+ 
+             "name": "AvailablePeriodExpiryWarningNotificationId",
+ 
+             "id": "bbddc8268619a43a98d277e2831845ad",
+ 
+             "externalId": "availablePeriodExpiryWarningNotificationId",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "STRING",
+ 
+             "purpose": "AVAILABLE_PERIOD_EXPIRY_WARNING_NOTIFICATION_ID",
+ 
+             "valueRegulator": "noPersonalization",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues": [            {
+ 
+                "name": "Possible value range",
+ 
+                "id": "idCsvPossibleValueRange",
+ 
+                "externalId": "possibleValueRange",
+ 
+                "default": false,
+ 
+                "rangeInterval": "closed",
+ 
+                "valueFrom": "1",
+ 
+                "valueTo": "256",
+ 
+                "valueLinks": []
+ 
+             }],
+ 
+             "annotationList": [],
+ 
+             "limitSpecValueRange": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Defines the expiry date of the availability period.",
+ 
+             "name": "AvailablePeriodExpiryDate",
+ 
+             "id": "b03b38c5fa35f4b16bb59aa0ccfad2e4",
+ 
+             "externalId": "availablePeriodExpiryDate",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "DATE_TIME",
+ 
+             "purpose": "AVAILABLE_PERIOD_EXPIRYDATE",
+ 
+             "valueRegulator": "canBePersonalized",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues": [            {
+ 
+                "name": "Possible value range",
+ 
+                "id": "idCsvPossibleValueRange",
+ 
+                "externalId": "possibleValueRange",
+ 
+                "default": false,
+ 
+                "rangeInterval": "closed",
+ 
+                "valueFrom": "Beginning of time",
+ 
+                "valueTo": "End of time",
+ 
+                "valueLinks": []
+ 
+             }],
+ 
+             "annotationList": [],
+ 
+             "limitSpecValueRange": true,
+ 
+             "isPersonalizedValueTransferable": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Defines how the available period starts, i.e. when the time period where a product can be traffic activated starts.",
+ 
+             "name": "AvailablePeriodFormationTechnique",
+ 
+             "id": "bac19701828f043739050954fe67e4b6",
+ 
+             "externalId": "availablePeriodFormationTechnique",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "STRING",
+ 
+             "purpose": "AVAILABLE_PERIOD_FORMATION_TECHNIQUE",
+ 
+             "valueRegulator": "selection",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues":             [
+ 
+                              {
+ 
+                   "name": "relativeValue",
+ 
+                   "id": "relativeValue",
+ 
+                   "externalId": "relativeValue",
+ 
+                   "default": true,
+ 
+                   "value": "Relative",
+ 
+                   "valueLinks": []
+ 
+                },
+ 
+                               {
+ 
+                   "name": "absoluteValue",
+ 
+                   "id": "absoluteValue",
+ 
+                   "externalId": "absoluteValue",
+ 
+                   "default": false,
+ 
+                   "value": "Absolute",
+ 
+                   "valueLinks": []
+ 
+                }
+ 
+             ],
+ 
+             "annotationList": [],
+ 
+             "limitSpecValueRange": true,
+ 
+             "isPersonalizedValueTransferable": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Defines the start date of the availability period.",
+ 
+             "name": "AvailablePeriodStartDate",
+ 
+             "id": "bc3cef596ada04abfa5a4bd15a85698d",
+ 
+             "externalId": "availablePeriodStartDate",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "DATE_TIME",
+ 
+             "purpose": "AVAILABLE_PERIOD_STARTDATE",
+ 
+             "valueRegulator": "canBePersonalized",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues": [            {
+ 
+                "name": "Possible value range",
+ 
+                "id": "idCsvPossibleValueRange",
+ 
+                "externalId": "possibleValueRange",
+ 
+                "default": false,
+ 
+                "rangeInterval": "closed",
+ 
+                "valueFrom": "Beginning of time",
+ 
+                "valueTo": "End of time",
+ 
+                "valueLinks": []
+ 
+             }],
+ 
+             "annotationList": [],
+ 
+             "limitSpecValueRange": true,
+ 
+             "isPersonalizedValueTransferable": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Defines the message to send to the customer when the product is being terminateded.",
+ 
+             "name": "TerminationNotificationId",
+ 
+             "id": "ec0a3e36bf7a8432d998f37ee3a69ba3",
+ 
+             "externalId": "terminationNotificationId",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "STRING",
+ 
+             "purpose": "TERMINATION_NOTIFICATION_ID",
+ 
+             "valueRegulator": "noPersonalization",
+ 
+            "canBeOverridden": true,
+ 
+             "possibleValues": [            {
+ 
+                "name": "Possible value range",
+ 
+                "id": "idCsvPossibleValueRange",
+ 
+                "externalId": "possibleValueRange",
+ 
+                "default": false,
+ 
+                "rangeInterval": "closed",
+ 
+                "valueFrom": "1",
+ 
+                "valueTo": "256",
+ 
+                "valueLinks": []
+ 
+             }],
+ 
+             "annotationList": [],
+ 
+             "limitSpecValueRange": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Defines the message to send to the customer when the product is about to be terminated.\nThis optional value must be set together with the Termination Warning Time In Advance value,\nand cannot be set when active period expiry date is infinite.",
+ 
+             "name": "TerminationWarningNotificationId",
+ 
+             "id": "c83c1003337b1422eb92319b32a6564c",
+ 
+             "externalId": "terminationWarningNotificationId",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "STRING",
+ 
+             "purpose": "TERMINATION_WARNING_NOTIFICATION_ID",
+ 
+             "valueRegulator": "noPersonalization",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues": [            {
+ 
+                "name": "Possible value range",
+ 
+                "id": "idCsvPossibleValueRange",
+ 
+                "externalId": "possibleValueRange",
+ 
+                "default": false,
+ 
+                "rangeInterval": "closed",
+ 
+                "valueFrom": "1",
+ 
+                "valueTo": "256",
+ 
+                "valueLinks": []
+ 
+             }],
+ 
+             "annotationList": [],
+ 
+             "limitSpecValueRange": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Defines how long time in advance the products termination warning should be sent.\nThis optional value must be set together with the Termination Warning Notification Id value,\nand cannot be set when the active period expiry date is infinite.",
+ 
+             "name": "TerminationWarningTimeInAdvance",
+ 
+             "id": "c90b3cb8ea105405eb49ca1deeb8f726",
+ 
+             "externalId": "terminationWarningTimeInAdvance",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 2147483647,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "LONG",
+ 
+             "purpose": "TERMINATION_WARNING_TIME_IN_ADVANCE",
+ 
+             "valueRegulator": "canBePersonalized",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues": [            {
+ 
+                "name": "Possible value range",
+ 
+                "id": "idCsvPossibleValueRange",
+ 
+                "externalId": "possibleValueRange",
+ 
+                "default": false,
+ 
+                "rangeInterval": "closed",
+ 
+                "unitOfMeasure": "hour",
+ 
+                "valueFrom": "0",
+ 
+                "valueTo": "9223372036854775807",
+ 
+                "valueLinks": []
+ 
+             }],
+ 
+             "annotationList": [],
+ 
+             "measure": "Duration",
+ 
+             "limitSpecValueRange": true,
+ 
+             "isPersonalizedValueTransferable": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Defines how long time in advance the expiry warning for the availability period should be sent.\nThis optional value must be set together with the Available Period Expiry Warning Period value, and cannot be set when available period expiry date is infinite, or when the product is activated at a fixed date rather than by a traffic event.",
+ 
+             "name": "AvailablePeriodExpiryWarningTimeInAdvance",
+ 
+             "id": "fba7428bff0444f988c6389e7616b435",
+ 
+             "externalId": "availablePeriodExpiryWarningTimeInAdvance",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 2147483647,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "LONG",
+ 
+             "purpose": "AVAILABLE_PERIOD_EXPIRY_WARNING_TIME_IN_ADVANCE",
+ 
+             "valueRegulator": "canBePersonalized",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues": [            {
+ 
+                "name": "Possible value range",
+ 
+                "id": "idCsvPossibleValueRange",
+ 
+                "externalId": "possibleValueRange",
+ 
+                "default": false,
+ 
+                "rangeInterval": "closed",
+ 
+                "unitOfMeasure": "day",
+ 
+                "valueFrom": "0",
+ 
+                "valueTo": "9223372036854775807",
+ 
+                "valueLinks": []
+ 
+             }],
+ 
+             "annotationList": [],
+ 
+             "measure": "Duration",
+ 
+             "limitSpecValueRange": true,
+ 
+             "isPersonalizedValueTransferable": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Defines how long time in advance the products active period expiry warning should be sent.\nThis optional value must be set together with the Active Period Expiry Warning Notification Id value,\nand cannot be set when the active period expiry date is infinite.",
+ 
+             "name": "ActivePeriodExpiryWarningTimeInAdvance",
+ 
+             "id": "a1d7e866c2ff14cb1b2bc1b0aa1f6d38",
+ 
+             "externalId": "activePeriodExpiryWarningTimeInAdvance",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 2147483647,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "LONG",
+ 
+             "purpose": "ACTIVE_PERIOD_EXPIRY_WARNING_TIME_IN_ADVANCE",
+ 
+             "valueRegulator": "canBePersonalized",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues": [            {
+ 
+                "name": "Possible value range",
+ 
+                "id": "idCsvPossibleValueRange",
+ 
+                "externalId": "possibleValueRange",
+ 
+                "default": false,
+ 
+                "rangeInterval": "closed",
+ 
+                "unitOfMeasure": "hour",
+ 
+                "valueFrom": "0",
+ 
+                "valueTo": "9223372036854775807",
+ 
+                "valueLinks": []
+ 
+             }],
+ 
+             "annotationList": [],
+ 
+             "measure": "Duration",
+ 
+             "limitSpecValueRange": true,
+ 
+             "isPersonalizedValueTransferable": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Defines for how long the product should be possible to activate, from the start of the availability period.",
+ 
+             "name": "AvailablePeriodLength",
+ 
+             "id": "c990fe0061638424d8ac181c0cdf8b4f",
+ 
+             "externalId": "availablePeriodLength",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "LONG",
+ 
+             "purpose": "AVAILABLE_PERIOD_LENGTH",
+ 
+             "valueRegulator": "canBePersonalized",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues": [            {
+ 
+                "name": "Possible value range",
+ 
+                "id": "idCsvPossibleValueRange",
+ 
+                "externalId": "possibleValueRange",
+ 
+                "default": false,
+ 
+                "rangeInterval": "closed",
+ 
+                "unitOfMeasure": "calendarSecond",
+ 
+                "valueFrom": "1",
+ 
+                "valueTo": "9223372036854775807",
+ 
+                "valueLinks": []
+ 
+             }],
+ 
+             "annotationList": [],
+ 
+             "measure": "CalendarTime",
+ 
+             "limitSpecValueRange": true,
+ 
+             "isPersonalizedValueTransferable": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Defines for how long the product should be active once it's been activated.",
+ 
+             "name": "ActivePeriodLength",
+ 
+             "id": "fda9d866b011a49bb92c692eacf72c9c",
+ 
+             "externalId": "activePeriodLength",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 0,
+ 
+             "valueType": "LONG",
+ 
+             "purpose": "ACTIVE_PERIOD_LENGTH",
+ 
+             "valueRegulator": "canBePersonalized",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues": [            {
+ 
+                "name": "Possible value range",
+ 
+                "id": "idCsvPossibleValueRange",
+ 
+                "externalId": "possibleValueRange",
+ 
+                "default": false,
+ 
+                "rangeInterval": "closed",
+ 
+                "unitOfMeasure": "calendarSecond",
+ 
+                "valueFrom": "1",
+ 
+                "valueTo": "9223372036854775807",
+ 
+                "valueLinks": []
+ 
+             }],
+ 
+             "annotationList": [],
+ 
+             "measure": "CalendarTime",
+ 
+             "limitSpecValueRange": true,
+ 
+             "isPersonalizedValueTransferable": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "Describes if an offering is allowed to solely be part of another offering.",
+ 
+             "name": "BundleOnly",
+ 
+             "id": "da0b648f2b12b40d8adb96ebe5ab441d",
+ 
+             "externalId": "bundleOnly",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 1,
+ 
+             "valueType": "BOOLEAN",
+ 
+             "purpose": "BUNDLE_ONLY",
+ 
+             "valueRegulator": "noPersonalization",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues":             [
+ 
+                               {
+ 
+                   "name": "bundleOnly",
+ 
+                   "id": "bundleOnly",
+ 
+                   "externalId": "bundleOnly",
+ 
+                   "default": false,
+ 
+                   "value": "true",
+ 
+                   "valueLinks": []
+ 
+                },
+ 
+                               {
+ 
+                   "name": "notBundleOnly",
+ 
+                   "id": "notBundleOnly",
+ 
+                   "externalId": "notBundleOnly",
+ 
+                   "default": true,
+ 
+                   "value": "false",
+ 
+                   "valueLinks": []
+ 
+                }
+ 
+             ],
+ 
+             "annotationList": [],
+ 
+             "limitSpecValueRange": true
+ 
+          },
+ 
+                   {
+ 
+             "links": [],
+ 
+             "characteristics": [],
+ 
+             "description": "A ProductOfferings priority",
+ 
+             "name": "NumericPriority",
+ 
+             "id": "d6d1564e66ed146adbdf1a80bd25daa0",
+ 
+             "externalId": "numericPriority",
+ 
+             "extensible": false,
+ 
+             "maxCardinality": 1,
+ 
+             "minCardinality": 1,
+ 
+             "valueType": "LONG",
+ 
+             "purpose": "PRIORITY",
+ 
+             "valueRegulator": "noPersonalization",
+ 
+             "canBeOverridden": true,
+ 
+             "possibleValues":             [
+ 
+                               {
+ 
+                   "name": "DefaultPriority",
+ 
+                   "id": "defaultPriority",
+ 
+                   "externalId": "defaultPriority",
+ 
+                   "default": true,
+ 
+                   "value": "200000",
+ 
+                   "valueLinks": []
+ 
+                },
+ 
+                               {
+ 
+                   "name": "Possible value range",
+ 
+                   "id": "idCsvPossibleValueRange",
+ 
+                   "externalId": "possibleValueRange",
+ 
+                   "default": false,
+ 
+                   "rangeInterval": "closed",
+ 
+                   "valueFrom": "0",
+ 
+                   "valueTo": "9223372036854775807",
+ 
+                   "valueLinks": []
+ 
+                }
+ 
+             ],
+ 
+             "annotationList": [],
+ 
+             "limitSpecValueRange": true
+ 
+          }
+ 
+       ],
+ 
+       "relationsTo": [      {
+ 
+          "id": "de16e9e6-8911-4c59-aa5b-aff480fead72",
+ 
+          "sourceId": "0a5b89dd-ca81-4336-ba85-cc92a069e081",
+ 
+          "sourceType": "ProductSpecification",
+ 
+          "sourceEntityPath": [],
+ 
+          "targetId": "de16e9e6-8911-4c59-aa5b-aff480fead72",
+ 
+          "targetType": "CustomerFacingServiceSpecification",
+ 
+          "targetEntityPath": [],
+ 
+          "relationType": "REQUIRES"
+ 
+       }],
+ 
+       "state": "ACTIVE",
+ 
+       "creationDate": "2020-10-29T04:59:43.000Z",
+ 
+       "lastModifiedDate": "2020-10-29T04:59:49.000Z",
+ 
+       "annotationList": []
+ 
+    }],
+ 
+    "relationsFrom": [   {
+ 
+       "id": "e729e127fe12745578a7356542f4520e",
+ 
+       "sourceId": "0eb09d67-a389-4671-b2f4-1e07f1d61f65",
+ 
+       "sourceType": "ProductOffering",
+ 
+       "sourceEntityPath": [],
+ 
+       "targetId": "0a5b89dd-ca81-4336-ba85-cc92a069e081",
+ 
+       "targetType": "ProductSpecification",
+ 
+       "targetEntityPath": [],
+ 
+       "relationType": "CONTAINS"
+ 
+    }],
+ 
+    "entityType": "ProductSpecification",
+ 
+    "sharedVersionValuesIdentifier": "1603947583392",
+ 
+    "creationDate": "2020-10-29T04:59:43.000Z",
+ 
+    "lastModifiedDate": "2020-10-29T04:59:43.000Z",
+ 
+    "referencesFrom":    [
+ 
+             {
+ 
+          "sourceId": "0eb09d67-a389-4671-b2f4-1e07f1d61f65",
+ 
+          "sourceType": "ProductOffering",
+ 
+          "targetId": "0a5b89dd-ca81-4336-ba85-cc92a069e081",
+ 
+          "targetType": "ProductSpecification",
+ 
+          "relationType": "DESIGN"
+ 
+       },
+ 
+             {
+ 
+          "sourceId": "0eb09d67-a389-4671-b2f4-1e07f1d61f65",
+ 
+          "sourceType": "ProductOffering",
+ 
+          "targetId": "0a5b89dd-ca81-4336-ba85-cc92a069e081",
+ 
+          "targetType": "ProductSpecification",
+ 
+          "relationType": "CONTAINS"
+ 
+       },
+ 
+             {
+ 
+          "sourceId": "0eb09d67-a389-4671-b2f4-1e07f1d61f65",
+ 
+          "sourceType": "ProductOffering",
+ 
+          "targetId": "0a5b89dd-ca81-4336-ba85-cc92a069e081",
+ 
+          "targetType": "ProductSpecification",
+ 
+          "relationType": "USE"
+ 
+       }
+ 
+    ]
+ 
+ }

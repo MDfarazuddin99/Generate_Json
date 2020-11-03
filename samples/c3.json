@@ -379,7 +379,7 @@
 
                                                                                                                                          "productOfferingPriceId": "${poproductPrise2}"
 
-                                                                                                                          },
+                                                                                                                          }
 
                                                                                                            ],
 
@@ -410,7 +410,7 @@
 
                                                                                                                                          }
 
-                                                                                                                          },
+                                                                                                                          }
 
                                                                                                            ],
 
@@ -423,8 +423,130 @@
                                                                                                                           }
                                                                                                            ]
 
-                                                                               }
+                                                                               },
 
+                                                                             {
+
+                                                                                                             "productOffering": {
+
+                                                                                                                            "productOfferingId": "${P_Data_Roaming_id}"
+
+                                                                                                             },
+
+                                                                                                             "validFor": {
+
+                                                                                                                            "start": "${startDate}"
+
+                                                                                                             },
+
+                                                                                                             "name": "P_Data_Roaming_id",
+
+                                                                                                             "billAccAssignmentRules": [
+
+                                                                                                                            {
+
+                                                                                                                                           "tmpId": "tmp_billAccAssignmentRule",
+
+                                                                                                                                           "validFor": {
+
+                                                                                                                                                          "start": "${startDate}"
+
+                                                                                                                                           }
+
+                                                                                                                            }
+
+                                                                                                             ],
+
+                                                                                                             "tmpId": "2afd63ea745a4115bd07c5c5e7abf123",
+
+                                                                                                             "statuses": [
+
+                                                                                                                            {
+
+                                                                                                                                           "validFor": {
+
+                                                                                                                                                          "start": "${startDate}"
+
+                                                                                                                                           },
+
+                                                                                                                                           "status": "ProductActive"
+
+                                                                                                                            }
+
+                                                                                                             ],
+
+                                                                                                             "productPrices": [
+
+                                                                                                                            {
+
+                                                                                                                                           "tmpId": "tmp_productPrice1",
+
+                                                                                                                                           "validFor": {
+
+                                                                                                                                                          "start": "${startDate}"
+
+                                                                                                                                           },
+
+                                                                                                                                           "productOfferingPriceId": "${poproductPrise1}"
+
+                                                                                                                            },
+                                                                                                                            {
+
+                                                                                                                                           "tmpId": "tmp_productPrice1",
+
+                                                                                                                                           "validFor": {
+
+                                                                                                                                                          "start": "${startDate}"
+
+                                                                                                                                           },
+
+                                                                                                                                           "productOfferingPriceId": "${poproductPrise2}"
+
+                                                                                                                            }
+
+                                                                                                             ],
+
+                                                                                                             "productPolicyRefs": [
+
+                                                                                                                            {
+
+                                                                                                                                           "tmpId": "tmp_productPolicyRef1",
+
+                                                                                                                                           "poPolicyRefId": "${poPolicyId1}",
+
+                                                                                                                                           "validFor": {
+
+                                                                                                                                                          "start": "${startDate}"
+
+                                                                                                                                           }
+
+                                                                                                                            },
+                                                                                                                            {
+
+                                                                                                                                           "tmpId": "tmp_productPolicyRef2",
+
+                                                                                                                                           "poPolicyRefId": "${poPolicyId2}",
+
+                                                                                                                                           "validFor": {
+
+                                                                                                                                                          "start": "${startDate}"
+
+                                                                                                                                           }
+
+                                                                                                                            }
+
+                                                                                                             ],
+
+                                                                                                             "services": [
+
+                                                                                                                            {
+
+                                                                                                                                           "tmpId": "service_id_5"
+
+                                                                                                                            }
+                                                                                                             ]
+
+                                                                                 }
                                                                            ],
 
                                                                            "services": [
@@ -483,7 +605,7 @@
 
                                                                                                                         {
 
-                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" ->doubt
+                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" 
 
                                                                                                                         }
 
@@ -495,7 +617,7 @@
 
                                                                                                          },
 
-                                                                                                         "tmpId": "service_id_1_rf_id_1", ->doubt
+                                                                                                         "tmpId": "service_id_1_rf_id_1", 
 
                                                                                                          "serviceSpecification": {
 
@@ -576,7 +698,7 @@
 
                                                                                                                         {
 
-                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" ->doubt
+                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" 
 
                                                                                                                         }
 
@@ -588,7 +710,7 @@
 
                                                                                                          },
 
-                                                                                                         "tmpId": "service_id_2_rf_id_2", ->doubt
+                                                                                                         "tmpId": "service_id_2_rf_id_2", 
 
                                                                                                          "serviceSpecification": {
 
@@ -669,7 +791,7 @@
 
                                                                                                                         {
 
-                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" ->doubt
+                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" 
 
                                                                                                                         }
 
@@ -681,7 +803,7 @@
 
                                                                                                          },
 
-                                                                                                         "tmpId": "service_id_3_rf_id_3", ->doubt
+                                                                                                         "tmpId": "service_id_3_rf_id_3", 
 
                                                                                                          "serviceSpecification": {
 
@@ -762,7 +884,7 @@
 
                                                                                                                         {
 
-                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" ->doubt
+                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" 
 
                                                                                                                         }
 
@@ -774,7 +896,99 @@
 
                                                                                                          },
 
-                                                                                                         "tmpId": "service_id_4_rf_id_4", ->doubt
+                                                                                                         "tmpId": "service_id_4_rf_id_4", 
+
+                                                                                                         "serviceSpecification": {
+
+                                                                                                                        "serviceSpecificationId": "${RFSSID1}"
+
+                                                                                                         },
+
+                                                                                                         "statuses": [
+
+                                                                                                                        {
+
+                                                                                                                                       "validFor": {
+
+                                                                                                                                                      "start": "${startDate}"
+
+                                                                                                                                       },
+
+                                                                                                                                       "status": "ServiceActive"
+
+                                                                                                                        }
+
+                                                                                                         ]
+
+                                                                                          },
+
+                                                                                          {
+
+                                                                                                         "serviceType": "CF",
+
+                                                                                                         "validFor": {
+
+                                                                                                                        "start": "${startDate}"
+
+                                                                                                         },
+
+                                                                                                         "tmpId": "service_id_5",
+
+                                                                                                         "serviceSpecification": {
+
+                                                                                                                        "serviceSpecificationId": "${CFSSID1}"
+
+                                                                                                         },
+
+                                                                                                         "statuses": [
+
+                                                                                                                        {
+
+                                                                                                                                       "validFor": {
+
+                                                                                                                                                      "start": "${startDate}"
+
+                                                                                                                                       },
+
+                                                                                                                                       "status": "ServiceActive"
+
+                                                                                                                        }
+
+                                                                                                         ],
+
+                                                                                                         "rfServices": [
+
+                                                                                                                        {
+
+                                                                                                                                       "tmpId": "service_id_5_rf_id_5"
+
+                                                                                                                        }
+
+                                                                                                         ]
+
+                                                                                          },
+
+                                                                                          {
+
+                                                                                                         "serviceType": "RF",
+
+                                                                                                         "resourceReferences": [
+
+                                                                                                                        {
+
+                                                                                                                                       "tmpId": "b9a75f1916de4713af4ed349e75add84" 
+
+                                                                                                                        }
+
+                                                                                                         ],
+
+                                                                                                         "validFor": {
+
+                                                                                                                        "start": "${startDate}"
+
+                                                                                                         },
+
+                                                                                                         "tmpId": "service_id_5_rf_id_5", 
 
                                                                                                          "serviceSpecification": {
 
@@ -801,6 +1015,7 @@
                                                                                           }
 
                                                                            ]
+                                                              }
 
                                              }
 

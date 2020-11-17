@@ -15,7 +15,7 @@
             "validFor": {
                   "start": "2020-01-01T00:00:00.000Z"
             },
-            "externalId": "${msisdn}",
+            "externalId": "5429503678977",
             "agreements": [
                   {
                         "contract": {
@@ -40,7 +40,7 @@
                                                       "start": "2020-01-01T00:00:00.000Z"
                                                 },
                                                 "tmpId": "b9a75f1916de4713af4ed349e75add84",
-                                                "resourceNumber": "${msisdn}",
+                                                "resourceNumber": "5429503678977",
                                                 "resourceType": " ",
                                                 "resourceSpec": {
                                                       "resourceSpecId": "55be0aa4-a00b-4e20-a9da-f0b69fb3e8b1"
@@ -84,28 +84,28 @@
                                           ],
                                           "productPrices": [
                                                 {
-                                                      "tmpId": "7gXvbC9kfPJ5MUHPJ94Fuw",
+                                                      "tmpId": "iMa9obhZqYrW5FqB5TCBFA",
                                                       "validFor": {
                                                             "start": "2020-01-01T00:00:00.000Z"
                                                       },
                                                       "productOfferingPriceId": "c42c385bbe58628d7dd5aece323defad"
                                                 },
                                                 {
-                                                      "tmpId": "PZLHQemcuZEbdMcruEJ9Sq",
+                                                      "tmpId": "eBYTAwxKT7MAbTtQLgKqTu",
                                                       "validFor": {
                                                             "start": "2020-01-01T00:00:00.000Z"
                                                       },
                                                       "productOfferingPriceId": "eeecad3fcd01017527b2a4e4b9bb46c2"
                                                 },
                                                 {
-                                                      "tmpId": "UnKEkVC77KV6GvgrFrP5Zg",
+                                                      "tmpId": "W22z6un4X69jBZBnFhMMvK",
                                                       "validFor": {
                                                             "start": "2020-01-01T00:00:00.000Z"
                                                       },
                                                       "productOfferingPriceId": "cc3ca5b3c83f88b8bcbdbed33b17bde7"
                                                 },
                                                 {
-                                                      "tmpId": "AgEHLocVxrjAK6oaHcjYtZ",
+                                                      "tmpId": "cFSDhbYufdG2a6SaQFu9sA",
                                                       "validFor": {
                                                             "start": "2020-01-01T00:00:00.000Z"
                                                       },
@@ -114,28 +114,28 @@
                                           ],
                                           "productPolicyRefs": [
                                                 {
-                                                      "tmpId": "KKeeFanAMUwnKTzkwKmzro",
+                                                      "tmpId": "5f2nEvMLxZ7ePDJEwrGdgb",
                                                       "poPolicyRefId": "b153bde4497594103bfadd2f45a8a070",
                                                       "validFor": {
                                                             "start": "2020-01-01T00:00:00.000Z"
                                                       }
                                                 },
                                                 {
-                                                      "tmpId": "eKz538buD4ykZzXCwbc9g6",
+                                                      "tmpId": "Lowgo9B7u26uR8Vu2VXMcD",
                                                       "poPolicyRefId": "d7088d1047df1465ab656875b17ca5dc",
                                                       "validFor": {
                                                             "start": "2020-01-01T00:00:00.000Z"
                                                       }
                                                 },
                                                 {
-                                                      "tmpId": "emyswjQU8P3XaJXHg2LqY9",
+                                                      "tmpId": "k8e3hMdKwKGMYnb3oMGkCW",
                                                       "poPolicyRefId": "d2f85a2b080674496909f437345e5963",
                                                       "validFor": {
                                                             "start": "2020-01-01T00:00:00.000Z"
                                                       }
                                                 },
                                                 {
-                                                      "tmpId": "Udv822WUPgLwz2BRLFCBw8",
+                                                      "tmpId": "XXMMi4gnutsGAzCAbTE6Pq",
                                                       "poPolicyRefId": "bcda704790d144c8588abfafde3a5055",
                                                       "validFor": {
                                                             "start": "2020-01-01T00:00:00.000Z"
@@ -144,13 +144,13 @@
                                           ],
                                           "services": [
                                                 {
-                                                      "tmpId": "Hn7YmsoW6BivPHCLwqTVKR"
+                                                      "tmpId": "gKTQjkdyVsCsT2XQ7tghUq"
                                                 },
                                                 {
-                                                      "tmpId": "R3VYUnxVXrbfuZuZMRJkzD"
+                                                      "tmpId": "7sNe8KtvW4QtX8WmnaHqVd"
                                                 },
                                                 {
-                                                      "tmpId": "nJ9TZ3Kd7HZqYrMmwcH8zt"
+                                                      "tmpId": "EbYdriZeUJLdLN2NSwxsW2"
                                                 }
                                           ]
                                     },
@@ -181,14 +181,14 @@
                                           ],
                                           "productPrices": [
                                                 {
-                                                      "tmpId": "YRTmvFNFbncYyoLwn83Urq",
+                                                      "tmpId": "UmWJLC5Cvya9wCpNJuVmRX",
                                                       "validFor": {
                                                             "start": "2020-01-01T00:00:00.000Z"
                                                       },
                                                       "productOfferingPriceId": "dd8aa86093e0e25a564064b68aae999d"
                                                 },
                                                 {
-                                                      "tmpId": "iCZ4cvtp8jpWeeSBYQDYcc",
+                                                      "tmpId": "42achGLXcAKAGzuPWMJFAU",
                                                       "validFor": {
                                                             "start": "2020-01-01T00:00:00.000Z"
                                                       },
@@ -197,14 +197,14 @@
                                           ],
                                           "productPolicyRefs": [
                                                 {
-                                                      "tmpId": "Qo5oP5PuMdCUvijkhJ2zhb",
+                                                      "tmpId": "CW6heQ8K5VrZVfSZL5sZnQ",
                                                       "poPolicyRefId": "bdb15c001e15f4c43a04c811a6f71396",
                                                       "validFor": {
                                                             "start": "2020-01-01T00:00:00.000Z"
                                                       }
                                                 },
                                                 {
-                                                      "tmpId": "5PR7B6GqAbkSL9k5ijNEMZ",
+                                                      "tmpId": "D8QqsjdFu22oWGsZByjQoG",
                                                       "poPolicyRefId": "e3c686c2bc22f4021947ddea32c87314",
                                                       "validFor": {
                                                             "start": "2020-01-01T00:00:00.000Z"
@@ -213,7 +213,7 @@
                                           ],
                                           "services": [
                                                 {
-                                                      "tmpId": "Q8xY6zjR4ycBFnMe6wejzV"
+                                                      "tmpId": "7SeEdZ55wVJut79NtQDoT4"
                                                 }
                                           ]
                                     }
@@ -221,10 +221,10 @@
                               "services": [
                                     {
                                           "serviceType": "CF",
-                                          "validFo444r": {
+                                          "validFor": {
                                                 "start": "2020-01-01T00:00:00.000Z"
                                           },
-                                          "tmpId": "Hn7YmsoW6BivPHCLwqTVKR",
+                                          "tmpId": "gKTQjkdyVsCsT2XQ7tghUq",
                                           "serviceSpecification": {
                                                 "serviceSpecificationId": "33c2672b-b767-4a23-9a3e-2816b8c65adc"
                                           },
@@ -238,16 +238,16 @@
                                           ],
                                           "rfServices": [
                                                 {
-                                                      "tmpId": "PiaWQw8uJohsdA2YBfn3p5"
+                                                      "tmpId": "hRjtMqhLUDCk9en4WxvfdU"
                                                 }
                                           ]
                                     },
                                     {
                                           "serviceType": "CF",
-                                          "validFo444r": {
+                                          "validFor": {
                                                 "start": "2020-01-01T00:00:00.000Z"
                                           },
-                                          "tmpId": "R3VYUnxVXrbfuZuZMRJkzD",
+                                          "tmpId": "7sNe8KtvW4QtX8WmnaHqVd",
                                           "serviceSpecification": {
                                                 "serviceSpecificationId": "e0feb640-e97a-4e2f-a97a-f5f04ffefeb2"
                                           },
@@ -261,16 +261,16 @@
                                           ],
                                           "rfServices": [
                                                 {
-                                                      "tmpId": "8RRrUDY2k5KViDTs3JTEuy"
+                                                      "tmpId": "HF9shwDoTEbAxn3jAEMduE"
                                                 }
                                           ]
                                     },
                                     {
                                           "serviceType": "CF",
-                                          "validFo444r": {
+                                          "validFor": {
                                                 "start": "2020-01-01T00:00:00.000Z"
                                           },
-                                          "tmpId": "nJ9TZ3Kd7HZqYrMmwcH8zt",
+                                          "tmpId": "EbYdriZeUJLdLN2NSwxsW2",
                                           "serviceSpecification": {
                                                 "serviceSpecificationId": "37a5e57a-02dc-435a-8b84-afb5a19cfee4"
                                           },
@@ -284,7 +284,30 @@
                                           ],
                                           "rfServices": [
                                                 {
-                                                      "tmpId": "Hcyqfi2z4tjJwjfNKAtAyn"
+                                                      "tmpId": "JKcXgdpHN658gEZUrtbGBf"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "serviceType": "CF",
+                                          "validFor": {
+                                                "start": "2020-01-01T00:00:00.000Z"
+                                          },
+                                          "tmpId": "7SeEdZ55wVJut79NtQDoT4",
+                                          "serviceSpecification": {
+                                                "serviceSpecificationId": "de16e9e6-8911-4c59-aa5b-aff480fead72"
+                                          },
+                                          "statuses": [
+                                                {
+                                                      "validFor": {
+                                                            "start": "2020-01-01T00:00:00.000Z"
+                                                      },
+                                                      "status": "ServiceActive"
+                                                }
+                                          ],
+                                          "rfServices": [
+                                                {
+                                                      "tmpId": "HF9shwDoTEbAxn3jAEMduE"
                                                 }
                                           ]
                                     },
@@ -298,7 +321,7 @@
                                           "validFor": {
                                                 "start": "2020-01-01T00:00:00.000Z"
                                           },
-                                          "tmpId": "PiaWQw8uJohsdA2YBfn3p5",
+                                          "tmpId": "hRjtMqhLUDCk9en4WxvfdU",
                                           "serviceSpecification": {
                                                 "serviceSpecificationId": "403b76c0-7dd8-4d74-b4d1-f73f2c6d69f1"
                                           },
@@ -321,7 +344,7 @@
                                           "validFor": {
                                                 "start": "2020-01-01T00:00:00.000Z"
                                           },
-                                          "tmpId": "8RRrUDY2k5KViDTs3JTEuy",
+                                          "tmpId": "HF9shwDoTEbAxn3jAEMduE",
                                           "serviceSpecification": {
                                                 "serviceSpecificationId": "8c1f2b2e-385c-4220-ac23-da154e76c0d1"
                                           },
@@ -344,55 +367,9 @@
                                           "validFor": {
                                                 "start": "2020-01-01T00:00:00.000Z"
                                           },
-                                          "tmpId": "Hcyqfi2z4tjJwjfNKAtAyn",
+                                          "tmpId": "JKcXgdpHN658gEZUrtbGBf",
                                           "serviceSpecification": {
                                                 "serviceSpecificationId": "8072c187-386b-46c1-aea2-cacf417fb241"
-                                          },
-                                          "statuses": [
-                                                {
-                                                      "validFor": {
-                                                            "start": "2020-01-01T00:00:00.000Z"
-                                                      },
-                                                      "status": "ServiceActive"
-                                                }
-                                          ]
-                                    },
-                                    {
-                                          "serviceType": "CF",
-                                          "validFo444r": {
-                                                "start": "2020-01-01T00:00:00.000Z"
-                                          },
-                                          "tmpId": "Q8xY6zjR4ycBFnMe6wejzV",
-                                          "serviceSpecification": {
-                                                "serviceSpecificationId": "de16e9e6-8911-4c59-aa5b-aff480fead72"
-                                          },
-                                          "statuses": [
-                                                {
-                                                      "validFor": {
-                                                            "start": "2020-01-01T00:00:00.000Z"
-                                                      },
-                                                      "status": "ServiceActive"
-                                                }
-                                          ],
-                                          "rfServices": [
-                                                {
-                                                      "tmpId": "9f6azLqbVi4j65FXpeDcqi"
-                                                }
-                                          ]
-                                    },
-                                    {
-                                          "serviceType": "RF",
-                                          "resourceReferences": [
-                                                {
-                                                      "tmpId": "b9a75f1916de4713af4ed349e75add84"
-                                                }
-                                          ],
-                                          "validFor": {
-                                                "start": "2020-01-01T00:00:00.000Z"
-                                          },
-                                          "tmpId": "9f6azLqbVi4j65FXpeDcqi",
-                                          "serviceSpecification": {
-                                                "serviceSpecificationId": "8c1f2b2e-385c-4220-ac23-da154e76c0d1"
                                           },
                                           "statuses": [
                                                 {
@@ -460,7 +437,7 @@
                                                       "start": "2020-01-01T00:00:00.000Z"
                                                 },
                                                 "billingCycleSpec": {
-                                                      "billingCycleSpecId": "${BCS_Id}"
+                                                      "billingCycleSpecId": "55acd7c0-01eb-42fe-896c-8603e74a5e35"
                                                 }
                                           }
                                     ]
@@ -472,13 +449,13 @@
                         "characteristicValues": [
                               {
                                     "characteristic": {
-                                          "characteristicId": "fcec61e12d41a4d4bb59531f7036ee5a"
+                                          "characteristicId": "c9364181776f84540aa8d73b0561229d"
                                     },
                                     "name": "CUSTOMER_TAX_CATEGORY",
                                     "values": [
                                           {
                                                 "charValueRef": "idCsvPossibleValueRange",
-                                                "value": "Student",
+                                                "value": "Teacher",
                                                 "validFor": {
                                                       "start": "2020-01-01T00:00:00.000Z"
                                                 }
@@ -487,7 +464,7 @@
                               },
                               {
                                     "characteristic": {
-                                          "characteristicId": "fea7ae6257dee4f5b9159b0002029b0a"
+                                          "characteristicId": "ba7443fb5574a491b964ed57e2e62fc3"
                                     },
                                     "name": "TAX_JURISDICTION_CODE",
                                     "values": [
@@ -504,7 +481,7 @@
                         "buckets": [
                               {
                                     "bucketSpec": {
-                                          "bucketSpecId": "2c932131-1adc-4962-8019-a7c79cbe0b31"
+                                          "bucketSpecId": "38181097-e4ea-4ddd-901d-2f8d0795059b"
                                     },
                                     "validFor": {
                                           "start": "2020-01-01T00:00:00.000Z"
@@ -529,7 +506,7 @@
                               }
                         ],
                         "billingAccountSpec": {
-                              "billingAccountSpecId": "39bde14a-f141-4896-9948-0fb0201fd1ba"
+                              "billingAccountSpecId": "ad9d5dcf-8470-4e03-981b-f9f568d730bd"
                         }
                   }
             ],
@@ -560,7 +537,7 @@
                                           "values": [
                                                 {
                                                       "charValueRef": "811E39B5A63841B793C8D0FED61114BB",
-                                                      "value": "${msisdn}",
+                                                      "value": "5429503678977",
                                                       "validFor": {
                                                             "start": "2020-01-01T00:00:00.000Z"
                                                       }
@@ -581,8 +558,8 @@
                   "tmpId": "tmp_party",
                   "partyNames": [
                         {
-                              "givenNames": "Ankit",
-                              "familyNames": "Brown",
+                              "givenNames": "Greg",
+                              "familyNames": "Donovan",
                               "validFor": {
                                     "start": "2020-01-01T00:00:00.000Z"
                               }

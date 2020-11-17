@@ -5,7 +5,9 @@ import pandas as pd
 import copy 
 import pprint
 import re 
-
+import os
+import names
+import numpy as np
 pp = pprint.PrettyPrinter(indent=4)
 
 product_price_object = {
@@ -31,7 +33,7 @@ service_object = {
 
 cfss_object = {
         "serviceType": "CF",
-                "validFo444r": {
+                "validFor": {
                     "start": "${startDate}"
                 },
                 "tmpId": "${cfss_reference_id}",
@@ -156,7 +158,6 @@ def make_po_price_objects(product_price_object,po_df):
         product_price_object_list.append(temp_product_price_object)
     return product_price_object_list
 
-
 def make_po_ref_objects(product_policy_ref_object,po_df):
     po_ref_object_list = list()
     for ref in re.findall("'([^']*)'",po_df['ProductPolicyRefId'][0]):
@@ -166,38 +167,37 @@ def make_po_ref_objects(product_policy_ref_object,po_df):
         po_ref_object_list.append(temp_product_policy_ref_object)
     return po_ref_object_list
 
-def make_service_objects(service_object,n=0):
+def make_service_objects(service_object,po_df,all_cfss_ids):
     service_objects_list = list()
-    for i in range(n):
-        temp = copy.deepcopy(service_object)
-        temp['tmpId'] = str(shortuuid.uuid())
-        service_objects_list.append(temp)
+    for cfss_id in re.findall("'([^']*)'",po_df['cfssId'][0]):
+        temp_service_object = copy.deepcopy(service_object)
+        temp_service_object['tmpId'] = all_cfss_ids[cfss_id]
+        service_objects_list.append(temp_service_object)
     return service_objects_list
 
-
-def make_cfss_objects(cfss_object,service_object_list,po_df):
+def make_cfss_objects(cfss_object,all_cfss_ids,all_rfss_ids,all_cfss_rfss_ids):
     cfss_object_list = list()
-    for so in service_object_list:
+    for cfssid,tmpid in all_cfss_ids.items():
         temp_cfss_object = copy.deepcopy(cfss_object)
-        temp_cfss_object["tmpId"] = so["tmpId"]
-        cfss_object_list.append(temp_cfss_object)
-    for so,cfssid in zip(cfss_object_list,re.findall("'([^']*)'",po_df['cfssId'][0])):
-        so['serviceSpecification']['serviceSpecificationId'] = cfssid
-        so['rfServices'].append({"tmpId":str(shortuuid.uuid())}) 
+        temp_cfss_object['serviceSpecification']['serviceSpecificationId'] = cfssid
+        temp_cfss_object['tmpId'] = tmpid 
+        cfss_object_list.append(temp_cfss_object)        
+    for so in cfss_object_list:
+        cfssid = so['serviceSpecification']['serviceSpecificationId']
+        # print(cfssid  ,'--',all_cfss_rfss_ids[cfssid],'--',all_rfss_ids[all_cfss_rfss_ids[cfssid]])
+        so['rfServices'].append({"tmpId":all_rfss_ids[all_cfss_rfss_ids[cfssid]]})
     return cfss_object_list
 
-def make_rfss_objects(rfss_object,cfss_object_list,po_df):
+def make_rfss_objects(rfss_object,all_cfss_rfss_ids,all_rfss_ids):
     rfss_object_list = list()
-    for so in cfss_object_list:
+    for rfssid,tmpid in all_rfss_ids.items():
         temp_rfss_object = copy.deepcopy(rfss_object)
-        temp_rfss_object["tmpId"] = so["rfServices"][0]['tmpId']
+        temp_rfss_object['tmpId'] = tmpid
+        temp_rfss_object['serviceSpecification']['serviceSpecificationId'] = rfssid
         rfss_object_list.append(temp_rfss_object)
-    for so,rfssid in zip(rfss_object_list,re.findall("'([^']*)'",po_df['rfssId'][0])):
-        so['serviceSpecification']['serviceSpecificationId'] = rfssid
     return rfss_object_list
 
-
-def make_product_object(product_object,po_df):
+def make_product_object(product_object,po_df,all_cfss_ids):
     temp_product_object = copy.deepcopy(product_object) 
     temp_product_object['productOffering']['productOfferingId'] = po_df['POId'][0]
     temp_product_object['name'] = po_df['POName'][0]
@@ -205,35 +205,9 @@ def make_product_object(product_object,po_df):
     temp_product_object['productPrices'] = po_price_objects_list
     po_ref_object_list = make_po_ref_objects(product_policy_ref_object,po_df)
     temp_product_object['productPolicyRefs'] = po_ref_object_list
-    service_object_list = make_service_objects(service_object,len(re.findall("'([^']*)'",po_df['cfssId'][0])))
+    service_object_list = make_service_objects(service_object,po_df,all_cfss_ids)
     temp_product_object['services'] = service_object_list
     return temp_product_object
 
 
-start_date = "2020-01-01T00:00:00.000Z" 
-po_df = pd.read_csv('p_basic.csv')
 
-po = make_product_object(product_object,po_df)
-cfss_object_list = make_cfss_objects(cfss_object,po['services'],po_df)
-rfss_object_list = make_rfss_objects(rfss_object,cfss_object_list,po_df)
-
-
-po_df_ = pd.read_csv('po_data.csv')
-
-po_ = make_product_object(product_object,po_df_)
-cfss_object_list_ = make_cfss_objects(cfss_object,po_['services'],po_df_)
-rfss_object_list_ = make_rfss_objects(rfss_object,cfss_object_list_,po_df_)
-
-
-with open('base.json','r') as base_file:
-    config_dict = json.load(base_file)
-    config_dict['resource']['agreements'][0]['contract']['products'].append(po) 
-    config_dict['resource']['agreements'][0]['contract']['products'].append(po_) 
-    config_dict['resource']['agreements'][0]['contract']['services'] = cfss_object_list + rfss_object_list + cfss_object_list_ + rfss_object_list_
-    str_json = json.dumps(config_dict)
-    str_json = str_json.replace('${startDate}',start_date)
-    config_dict = json.loads(str_json)
-    with open('custom.json','r+') as custom_file:
-        json.dump(config_dict,custom_file,indent=6)
-
-print(len(cfss_object_list),len(rfss_object_list),len(cfss_object_list_),len(rfss_object_list_))

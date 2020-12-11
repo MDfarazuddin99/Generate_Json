@@ -1,10 +1,12 @@
 import names 
 import pandas as pd    
 import numpy as np
+
 names_dict = dict()
 names_dict['gender'] = []
 names_dict['first_name'] = []
 names_dict['last_name'] = []
+
 for i in range(100):
     if np.random.randint(0,100)%2==0:
         names_dict['gender'].append('female')

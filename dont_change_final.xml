@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RequestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema/diameterRequest.xsd">
+	<!-- AVP Code: 263 Session-Id -->
+	<AVP code="263" value="${Local.session}" vendor-id="0" />
+	<!-- AVP Code: 264 Origin-Host -->
+	<!-- <AVP code="264" value="10-99-243-50-ggsn04.ericsson.se" vendor-id="0" /> -->
+	<!-- AVP Code: 296 Origin-Realm -->
+	<!-- <AVP code="296" value="ggsn04.ericsson.se" vendor-id="0" /> -->
+	<!-- AVP Code: 283 Destination-Realm -->
+	<AVP code="283" value="${Global.destRealm}" vendor-id="0" />
+	<!-- AVP Code: 293 Destination-Host -->
+	<!-- <AVP code="293" value="tsp5004.ericsson.se" vendor-id="0" /> -->
+	<!-- AVP Code: 258 Auth-Application-Id -->
+	<AVP code="258" value="4" vendor-id="0" />
+	<!-- AVP Code: 416 CC-Request-Type -->
+	<AVP code="416" value="3" vendor-id="0" />
+	<!-- AVP Code: 415 CC-Request-Number -->
+	<AVP code="415" value="${Local.reqNum}" vendor-id="0" />
+	<!-- AVP Code: 461 Service-Context-Id -->
+	<AVP code="461" value="${Global.serviceContextID}" vendor-id="0" />
+	<!-- AVP Code: 55 Event-Timestamp -->
+	<AVP code="55" value="CEST: 2020-01-01 08:05:00" vendor-id="0" />
+	<!-- AVP Code: 278 Origin-State-Id -->
+	<AVP code="278" value="18" vendor-id="0" />
+	<!-- AVP Code: 443 Subscription-Id -->
+	<!-- Grouped data: 000001c24000000c00000000 -->
+	<AVP code="443" value="" vendor-id="0">
+		<!-- AVP Code: 450 Subscription-Id-Type -->
+		<AVP code="450" value="0" vendor-id="0" />
+		<!-- AVP Code: 444 Subscription-Id-Data -->
+		<AVP code="444" value="${Global.subCons}${Local.subID}" vendor-id="0" />
+	</AVP>
+	<!-- AVP Code: 443 Subscription-Id -->
+	<!-- Grouped data: 000001c24000000c00000001 -->
+	<AVP code="443" value="" vendor-id="0">
+		<!-- AVP Code: 450 Subscription-Id-Type -->
+		<AVP code="450" value="1" vendor-id="0" />
+		<!-- AVP Code: 444 Subscription-Id-Data -->
+		<AVP code="444" value="${Global.Subscription-Id-IMSI}" vendor-id="0" />
+	</AVP>
+	
+	<!-- AVP Code: 23 3GPP-MS-TimeZone -->
+	<!--AVP code="23" value="0x8001" vendor-id="10415" /-->
+	
+
+	<AVP code="456" value="" vendor-id="0">
+		<!-- AVP Code: 446 Used-Service-Unit -->
+		<!-- Grouped data: 000001a54000001000000000000014be -->
+		<AVP code="446" value="" vendor-id="0">
+			<!-- AVP Code: 421 CC-Total-Octets -->
+			<AVP code="421" value="${Global.USU_Final_TotalOctets_RG}" vendor-id="0" />
+			<AVP code="412" value="${Global.USU_Final_InputOctets_RG}" vendor-id="0" />
+			<AVP code="414" value="${Global.USU_Final_OutputOctets_RG}" vendor-id="0" />
+		</AVP>
+		<!-- AVP Code: 432 Rating-Group -->
+		<AVP code="432" value="${Global.RG1}" vendor-id="0" />
+		<AVP code="872" value="2" vendor-id="10415" />
+	</AVP>
+	
+	<!-- AVP Code: 458 User-Equipment-Info -->
+	<!-- Grouped data: 000001cb4000000c00000000 -->
+	<AVP code="458" value="" vendor-id="0">
+		<!-- AVP Code: 459 User-Equipment-Info-Type -->
+		<AVP code="459" value="0" vendor-id="0" />
+		<!-- AVP Code: 460 User-Equipment-Info-Value -->
+		<AVP code="460" value="5397491021754205" vendor-id="0" />
+	</AVP>
+	<!-- AVP Code: 873 Service-Information -->
+	<!-- Grouped data: 0000036ac0000164000028af00000002c0000010000028af047868c100000003c0000010000028af00000000000004cbc0000012000028af000136030002000000000005c0000025000028af39392d30623632316637333936363836383734363134303430000000000004ccc0000012000028af00010a64010f00000000034fc0000012000028af00010a63f11a00000000034ec0000012000028af00010a610203000000000008c0000012000028af323430383832000000000009c0000012000028af30353532343000000000000ac000000d000028af350000000000000cc000000d000028af310000000000000dc0000010000028af3038303000000012c0000011000028af323632393900000000000017c000000e000028af8001000000000016c0000014000028af0162f2990023002300000015c000000d000028af010000000000001e4000001f61706e3034676e6e7630312e6572696373736f6e2e736500 -->
+	<AVP code="873" value="" vendor-id="10415">
+		<!-- AVP Code: 874 PS-Information -->
+		<!-- Grouped data: 00000002c0000010000028af047868c1 -->
+		<AVP code="874" value="" vendor-id="10415">
+			<!-- AVP Code: 2 Public-Identity/3GPP Charging ID -->
+			<AVP code="2" value="000001" vendor-id="10415" />
+			<!-- AVP Code: 3 Server-Name/3GPP PDP Type -->
+			<AVP code="3" value="0" vendor-id="10415" />
+			<!-- AVP Code: 1227 PDP-Address -->
+			<!--AVP code="1227" value="54.3.0.2" vendor-id="10415" /-->
+			<!-- AVP Code: 1016 QoS-Information -->
+	<!-- Grouped data: 00000404c0000010000028af00000006 -->
+	<AVP code="1016" value="" vendor-id="10415">
+		<!-- AVP Code: 1028 QoS-Class-Identifier -->
+		<AVP code="1028" value="8" vendor-id="10415" />
+		<!-- AVP Code: 515 Max-Requested-Bandwidth-DL -->
+		<AVP code="515" value="384000" vendor-id="10415" />
+		<!-- AVP Code: 516 Max-Requested-Bandwidth-UL -->
+		<AVP code="516" value="384000" vendor-id="10415" />
+		<!-- AVP Code: 1034 Allocation-Retention-Priority -->
+		<!-- Grouped data: 00000416c0000010000028af00000002 -->
+		<AVP code="1034" value="" vendor-id="10415">
+			<!-- AVP Code: 1046 Priority-Level -->
+			<AVP code="1046" value="2" vendor-id="10415" />
+		</AVP>
+	</AVP>
+			<!-- AVP Code: 1228 SGSN-Address -->
+			<AVP code="1228" value="10.99.1.143" vendor-id="10415" />
+			<!-- AVP Code: 847 GGSN-Address -->
+			<AVP code="847" value="10.32.8.2" vendor-id="10415" />
+			<!-- AVP Code: 846 GPRS-Charging-ID -->
+			<AVP code="846" value="10.37.8.2" vendor-id="10415" />
+			<!-- AVP Code: 8 SIP-Number-Auth-Items/3GPP IMSI MCC MNC -->
+			<AVP code="8" value="216560" vendor-id="10415" />
+			<!-- AVP Code: 9 SIP-Authentication-Scheme/3GPP-GGSN-MCC-MNC -->
+			<AVP code="9" value="4947055240" vendor-id="10415" />
+			<!-- AVP Code: 10 SIP-Authenticate -->
+			<AVP code="10" value="35" vendor-id="10415" />
+			<!-- AVP Code: 12 SIP-Authentication-Context -->
+			<AVP code="12" value="31" vendor-id="10415" />
+			<!-- AVP Code: 13 SIP-Auth-Data-Item/3GPP-Charging-Characteristics -->
+			<AVP code="13" value="30:38:30:30" vendor-id="10415" />
+			<!-- 3GPP-RAT-Type -->
+			<AVP code="21" value="0x02" vendor-id="10415"/>
+			<!-- 3GPP-SGSN-MCC-MNC --> 
+			<AVP code="18" value="24097" vendor-id="10415"/>
+			<!-- AVP Code: 23 3GPP-MSTimeZone -->
+			<AVP code="23" value="0x${Global.Timezone}" vendor-id="10415" />
+			<!-- AVP Code: 22 3GPP-User-Location-Info -->
+			<AVP code="22" value="0x0142f07900c80001" vendor-id="10415" />
+		</AVP>	
+	</AVP>
+</RequestData>

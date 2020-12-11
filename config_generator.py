@@ -209,5 +209,78 @@ def make_product_object(product_object,po_df,all_cfss_ids):
     temp_product_object['services'] = service_object_list
     return temp_product_object
 
+ 
+if __name__ == "__main__":
+    start_date = "2020-01-01T00:00:00.000Z" 
+    # input_ = input('Enter Customer Type: ')       
+    input_dict = {'C1':['Basic','Data'],'C2':['Basic','Voice','Data'],'C3':['Basic','Data','Data_Roaming'],'C4':['Basic','Voice','Voice_Roaming','Data'],'C5':['Unlimited']}
+    menu_dict = {'C1':15,'C2':20,'C3':25,'C4':35,'C5':5}
+    msisdn = 8455953409
+    customer_count = 1
+    for key in menu_dict:
+        for i in range(1,menu_dict[key]+1):
+            print(key,i,customer_count)
+            customer_count += 1
+            input_pos = input_dict[key]
+            msisdn += 1
+            all_po_files_csv = list()
+            for po in input_pos:
+                # print('P_{}'.format(po))
+                all_po_files_csv.append(os.path.join('All_PO','po_' + po.lower() + '.csv'))  
+
+            all_cfss_ids = dict()
+            all_rfss_ids = dict()
+            all_cfss_rfss_ids = dict()
+            for csv_file in all_po_files_csv:
+                po_df = pd.read_csv(csv_file)
+                cfss_id_list = re.findall("'([^']*)'",po_df['cfssId'][0])
+                for cfss_id in cfss_id_list:
+                    if cfss_id not in all_cfss_ids.keys():
+                        all_cfss_ids[cfss_id] = shortuuid.uuid()
+                rfss_id_list = re.findall("'([^']*)'",po_df['rfssId'][0])
+                for rfss_id,cfss_id in zip(rfss_id_list,cfss_id_list):
+                    if rfss_id not in all_rfss_ids.keys():
+                        all_rfss_ids[rfss_id] = shortuuid.uuid()  
+                    if rfss_id not in all_cfss_ids.keys():
+                        all_cfss_rfss_ids[cfss_id] = rfss_id 
+
+            cfss_object_list = make_cfss_objects(cfss_object,all_cfss_ids,all_rfss_ids,all_cfss_rfss_ids)
+            rfss_object_list = make_rfss_objects(rfss_object,all_cfss_rfss_ids,all_rfss_ids)
+
+            # print('all_cfss_ids')
+            # pp.pprint(all_cfss_ids)
+            # print('all_rfss_ids')
+            # pp.pprint(all_rfss_ids)
+            # print('all_cfss_rfss_ids')
+            # pp.pprint(all_cfss_rfss_ids)
+
+            with open('base.json','r') as base_file:
+                config_dict = json.load(base_file)
+                for csv_file in all_po_files_csv:
+                    # print(csv_file)        
+                    po_df = pd.read_csv(csv_file)
+                    po = make_product_object(product_object,po_df,all_cfss_ids)
+                    config_dict['resource']['agreements'][0]['contract']['products'].append(po)
+                names_dict = pd.read_csv('names.csv')
+                print(names_dict.loc[customer_count]['first_name'],customer_count)
+                config_dict['resource']['agreements'][0]['contract']['services'] = cfss_object_list + rfss_object_list 
+                config_dict['resource']['billingAccounts'][0]['customerBillSpecifications'][0]['billSpec']['billSpecId'] = 'd8dc0644-5d07-4ae4-9ae6-8acdc8c4fa3c'
+                config_dict['resource']['billingAccounts'][0]['customerBillSpecifications'][0]['customerDocSpecs'][0]['docSpecId'] = '0db86207-0ef7-42d7-9c9e-5116b4e3697e'
+                config_dict['resource']['billingAccounts'][0]['customerBillSpecifications'][0]['customerDocSpecs'][0]['customerDocFormatSpecs'][0]['docFormatSpecId'] = 'b5bf739e-e63b-4296-87a7-e8eeb068f2d1'
+                config_dict['resource']['billingAccounts'][0]['customerBillSpecifications'][0]['customerBillingCycleSpecifications'][0]['billingCycleSpec']['billingCycleSpecId'] = '55acd7c0-01eb-42fe-896c-8603e74a5e35'
+                config_dict['resource']['billingAccounts'][0]['characteristicValues'][0]['characteristic']['characteristicId'] = 'c9364181776f84540aa8d73b0561229d' 
+                config_dict['resource']['billingAccounts'][0]['characteristicValues'][0]['values'][0]['value'] = 'Teacher'
+                config_dict['resource']['billingAccounts'][0]['characteristicValues'][1]['characteristic']['characteristicId'] = 'ba7443fb5574a491b964ed57e2e62fc3'
+                config_dict['resource']['billingAccounts'][0]['characteristicValues'][1]['values'][0]['value'] = 'HAR'
+                config_dict['resource']['billingAccounts'][0]['buckets'][0]['bucketSpec']['bucketSpecId'] = '38181097-e4ea-4ddd-901d-2f8d0795059b'
+                config_dict['resource']['relatedParty']['partyNames'][0]['givenNames'] = names_dict.loc[customer_count]['first_name']
+                config_dict['resource']['relatedParty']['partyNames'][0]['familyNames'] = names_dict.loc[customer_count]['last_name']
+                config_dict['resource']['billingAccounts'][0]['billingAccountSpec']['billingAccountSpecId'] = 'ad9d5dcf-8470-4e03-981b-f9f568d730bd'
+                str_json = json.dumps(config_dict)
+                str_json = str_json.replace('${msisdn}',str(msisdn))
+                str_json = str_json.replace('${startDate}',start_date)
+                config_dict = json.loads(str_json)
+                with open('All_Customers/{}/custom_{}_{}_{}.json'.format(key,key,i,customer_count),'w+') as custom_file:
+                    json.dump(config_dict,custom_file,indent=6)
 
 

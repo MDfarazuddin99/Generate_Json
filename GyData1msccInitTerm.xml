@@ -1,0 +1,125 @@
+<FFS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema/config3.xsd">
+    
+    <Logging path="logs/diameter_gy/2mscc" snapshotTime="2000" snapshotInConsole="true" statistics="false" logDataInOut="false" debugLogging="false" />
+
+    
+    <Repository>
+        <Global>
+            
+            <Variable name="nowunix" type="Date" format="UNIX" timezone="" value="" datatype="String" />
+            
+            <Variable name="nowin+6" type="Date" format="yy-MM-dd HH:mm:ss.SSS z" timezone="GMT+6" value="" datatype="String" />
+            
+            <Variable name="then" type="Date" format="NTP" timezone="GMT+1" value="" datatype="String" />
+            <Variable name="AcctAppID" type="Fixed" value="0" datatype="Integer" />
+            <Variable name="AuthAppID" type="Fixed" value="4" datatype="Integer" />
+            <Variable name="Subscription-Id-IMSI" type="Fixed" value="240882115009020" datatype="String" />
+            <Variable name="destIP" type="Fixed" value="10.223.66.235" datatype="String" />
+            <Variable name="destIP2" type="Fixed" value="10.223.66.235" datatype="String" />
+            <Variable name="destPort" type="Fixed" value="13801" datatype="String" />
+            <Variable name="destRealm" type="Fixed" value="ericsson.com" datatype="String" />
+            <Variable name="destVendorID" type="Fixed" value="193" datatype="Integer" />
+            <Variable name="ownIP" type="Fixed" value="10.223.67.220" datatype="String" />
+            <Variable name="ownPort" type="Fixed" value="3861" datatype="String" />
+            <Variable name="ownRealm" type="Fixed" value="ericsson.se" datatype="String" />
+            <Variable name="ownVendorID" type="Fixed" value="10415" datatype="Integer" />
+            <Variable name="transport" type="Fixed" value="tcp" datatype="String" />
+
+            <Variable name="MSISDNstartValue" type="Fixed" value="5429503678977" datatype="Integer" />
+            <Variable name="MSISDNstopValue" type="Fixed" value="5429503678977" datatype="Integer" />
+
+            
+            <Variable name="randomRange" type="Step" start="${MSISDNstartValue}" stepsize="1" max="${MSISDNstopValue}" datatype="Integer" />
+
+
+            <Variable name="recordNumber" type="Fixed" value="0" datatype="Integer" />
+            <Variable name="serviceContextID" type="Fixed" value="Ericsson_OCS_V1_0.0.0.10.32251@3gpp.org" datatype="String" />
+            <Variable name="sessionID" type="Fixed" value="ffs-SIM1-ggsn.myoperator.se" datatype="String" />
+            <Variable name="step" type="Step" start="0" stepsize="1" datatype="Integer" />
+            <Variable name="subCons" type="Fixed" value="" datatype="String" />
+            <Variable name="RG1" type="Fixed" value="46" datatype="String" />
+
+            <Variable name="RSU_RG" type="Fixed" value="1048000" datatype="String" />
+
+            <Variable name="USU_TotalOctets_RG" type="Fixed" value="1000000" datatype="String" />
+            <Variable name="USU_InputOctets_RG" type="Fixed" value="750000" datatype="String" />
+            <Variable name="USU_OutputOctets_RG" type="Fixed" value="250000" datatype="String" />
+
+            <Variable name="USU_Final_TotalOctets_RG" type="Fixed" value="1000000" datatype="String" />
+            <Variable name="USU_Final_InputOctets_RG" type="Fixed" value="750000" datatype="String" />
+            <Variable name="USU_Final_OutputOctets_RG" type="Fixed" value="250000" datatype="String" />
+
+            
+            
+            <Variable name="Timezone" type="Fixed" value="8001" datatype="String" />
+        </Global>
+        <Local>
+            <Variable name="recordNumber" type="Fixed" value="0" datatype="Integer" />
+            <Variable name="reqNum" type="Step" start="0" stepsize="1" datatype="Integer" />
+            <Variable name="session" type="Fixed" value="nothing" datatype="String" />
+            <Variable name="subID" type="Fixed" value="nothing" datatype="String" />
+
+            <Variable name="randomDelay" type="RandomRange" from="2000" to="4000" />
+        </Local>
+    </Repository>
+
+    
+    <Plugin class="cmg.tools.ffs.plugins.diameter.Diameter">
+        <Argument name="ownRealm" value="${Global.ownRealm}" />
+        <Argument name="serviceContextID" value="${Global.serviceContextID}" />
+        <Argument name="destURI" value="aaa://${Global.destIP}:${Global.destPort};transport=${Global.transport}" />
+        <Argument name="secondaryDestURI" value="aaa://${Global.destIP2}:${Global.destPort};transport=${Global.transport}" />
+        <Argument name="dictionaryPath" value="traffic/common/gy_data_dictionary.xml" />
+        <Argument name="destRealm" value="${Global.destRealm}" />
+        <Argument name="secondaryDestRealm" value="${Global.destRealm}" />
+        <Argument name="ownProductID" value="MultiMediation" />
+        <Argument name="waitForCEATimeout" value="15000" />
+        <Argument name="ownVendorID" value="${Global.ownVendorID}" />
+        <Argument name="destVendorID" value="193" />
+        <Argument name="destVendorID" value="${Global.destVendorID}" />
+        <Argument name="AcctAppID" value="${Global.AcctAppID}" />
+        <Argument name="AuthAppID" value="${Global.AuthAppID}" />
+        <Argument name="OwnSCTPIpAddress" value="${Global.ownIP}" />
+        <Argument name="answerResultCode" value="2001" />
+        <Argument name="ownURI" value="aaas://${Global.ownIP}:${Global.ownPort};transport=${Global.transport}" />
+
+        
+      <Argument name="sctpNumOutstreams" value="17" />
+      <Argument name="sctpMaxInstreams" value="17" />
+      <Argument name="sctpMaxInitAttempts" value="8" />
+      <Argument name="sctpMaxInitTimeout" value="1000" />
+      <Argument name="sctpRtoInitial" value="1000" />
+      <Argument name="sctpRtoMax" value="1000" />
+      <Argument name="sctpRtoMin" value="500" />
+      <Argument name="sctpAsocMaxRxt" value="8" />
+      <Argument name="sctpValidCookieLife" value="60000" />
+      <Argument name="sctpHbInterval" value="5000" />
+      <Argument name="sctpPathMaxRxt" value="4" />
+      <Argument name="SctpSendBufferSize" value="819200" />
+      <Argument name="SctpReceiveBufferSize" value="204800" />
+    </Plugin>
+
+    
+    <Models>
+        <Model name="M1">
+            <Item repeat="1" delay="${randomDelay}" timeout="30000" type="out_sync">
+                <Data name="RequestType" value="CCR" datatype="String" />
+                <Data name="DiameterRequest" value="traffic/data/gy/1mscc/initial.xml" datatype="XMLDocument" />
+                <Data name="PBit" value="true" datatype="String" />
+            </Item>
+            <Item repeat="1" delay="${randomDelay}" timeout="30000" prevCondition="ok" type="out_sync">
+                <Data name="RequestType" value="CCR" datatype="String" />
+                <Data name="DiameterRequest" value="traffic/data/gy/1mscc/final.xml" datatype="XMLDocument" />
+                <Data name="DiameterAnswer" value="traffic/common/diameter_MSCC_check1.xml" datatype="XMLDocument" />
+                <Data name="PBit" value="true" datatype="String" />
+            </Item>
+        </Model>
+    </Models>
+
+    
+    <TrafficModel>
+      <Slot times="1" duration="0" tps="3000" activeModels="0">
+            <Model name="M1" weight="100" />
+        </Slot>
+    </TrafficModel>
+</FFS>

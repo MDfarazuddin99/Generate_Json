@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RequestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema/diameterRequest.xsd">
+
+	<AVP code="263" value="${Local.session}.set(${Global.sessionID}-vari1_GmwmZhGbT5uhUXUYJkVrQ6-${Global.step})" vendor-id="0" />
+	
+	
+	
+	
+	
+	<AVP code="283" value="${Global.destRealm}" vendor-id="0" />
+	
+	
+	<AVP code="258" value="4" vendor-id="0" />
+	
+	<AVP code="416" value="1" vendor-id="0" />
+	
+	<AVP code="415" value="${Local.reqNum}" vendor-id="0" />
+	
+	<AVP code="461" value="${Global.serviceContextID}" vendor-id="0" />
+	
+	<AVP code="455" value="1" />
+	
+	<AVP code="55" value="CEST: 2020-01-30 08:02:01" vendor-id="0" />
+	
+	
+	
+	
+
+	
+	<AVP code="278" value="18" />
+	
+	
+	<AVP code="443" value="" vendor-id="0">
+		
+		<AVP code="450" value="0" vendor-id="0" />
+		
+		<AVP code="444" value="${Global.subCons}${Local.subID}.set(${Global.randomRange})" />
+	</AVP>
+	
+	
+	<AVP code="443" value="" vendor-id="0">
+		
+		<AVP code="450" value="1" vendor-id="0" />
+		
+		<AVP code="444" value="${Global.Subscription-Id-IMSI}" vendor-id="0" />
+	</AVP>
+	
+
+	
+	
+
+	<AVP code="873" value="" vendor-id="10415">
+		
+		
+		<AVP code="874" value="" vendor-id="10415">
+			
+			<AVP code="2" value="000001" vendor-id="10415" />
+			
+			<AVP code="3" value="0" vendor-id="10415" />
+			
+			
+			
+	
+	<AVP code="1016" value="" vendor-id="10415">
+		
+		<AVP code="1028" value="8" vendor-id="10415" />
+		
+		<AVP code="515" value="384000" vendor-id="10415" />
+		
+		<AVP code="516" value="384000" vendor-id="10415" />
+		
+		
+		<AVP code="1034" value="" vendor-id="10415">
+			
+			<AVP code="1046" value="2" vendor-id="10415" />
+		</AVP>
+	</AVP>
+			
+			<AVP code="1228" value="10.99.1.143" vendor-id="10415" />
+			
+			<AVP code="847" value="10.32.8.2" vendor-id="10415" />
+			
+			<AVP code="846" value="10.37.8.2" vendor-id="10415" />
+			
+			<AVP code="8" value="216560" vendor-id="10415" />
+			
+			<AVP code="9" value="4947055240" vendor-id="10415" />
+			
+			<AVP code="10" value="35" vendor-id="10415" />
+			
+			<AVP code="12" value="31" vendor-id="10415" />
+			
+			<AVP code="13" value="30:38:30:30" vendor-id="10415" />
+			
+			<AVP code="21" value="0x02" vendor-id="10415" />
+			 
+			<AVP code="18" value="24097" vendor-id="10415" />
+			
+			<AVP code="23" value="0x${Global.Timezone}" vendor-id="10415" />
+			
+			<AVP code="22" value="0x0142f07900c80001" vendor-id="10415" />
+		</AVP>	
+	</AVP> 
+ 
+     
+    
+    <AVP code="456" value="" vendor-id="0">
+        
+        <AVP code="437" value="" vendor-id="0">
+            
+            
+            
+            
+        </AVP>
+        
+        <AVP code="432" value="${Global.RG1}" vendor-id="0" />
+    </AVP>
+</RequestData>

@@ -25,8 +25,8 @@
             <Variable name="ownVendorID" type="Fixed" value="10415" datatype="Integer" />
             <Variable name="transport" type="Fixed" value="tcp" datatype="String" />
 
-            <Variable name="MSISDNstartValue" type="Fixed" value="5429503678977" datatype="Integer" />
-            <Variable name="MSISDNstopValue" type="Fixed" value="5429503678977" datatype="Integer" />
+            <Variable name="MSISDNstartValue" type="Fixed" value="8455953469" datatype="Integer" />
+            <Variable name="MSISDNstopValue" type="Fixed" value="8455953469" datatype="Integer" />
 
             
             <Variable name="randomRange" type="Step" start="${MSISDNstartValue}" stepsize="1" max="${MSISDNstopValue}" datatype="Integer" />

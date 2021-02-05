@@ -1,0 +1,30 @@
+{
+    "resource": {
+        "customerTask": {
+            "initializationTasks": [
+                {
+                    "initializationTaskItems": [
+                        {
+                            "externalId": "CashAccountCenter",
+                            "amount": {
+                                "amount": {
+                                    "number": 109825,
+                                    "decimalPlaces": 2
+                                },
+                                "units": "usd"
+                            },
+                            "specId": "1EF88A0C4BDE4263A162829D4EE4DFCC"
+                        }
+                    ],
+                    "specId": "172C51D326C54E9EA3703F87F571F865",
+                    "externalId": "44"
+                }
+            ],
+            "customerId": "5E1112C420134296BC5DB27BEDB7BB38"
+        },
+        "transactionDate": "2021-02-02T13:06:04.641Z",
+        "sourceName": "33",
+        "transactionTypeId": "Payment",
+        "id": "f222af34-8745-4d95-b03c-c872bc34f7f3"
+    }
+}

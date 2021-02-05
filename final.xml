@@ -19,7 +19,7 @@
 	
 	<AVP code="461" value="${Global.serviceContextID}" vendor-id="0" />
 	
-	<AVP code="55" value="CEST: 2020-01-30 08:02:01" vendor-id="0" />
+	<AVP code="55" value="CEST: 2020-01-30 08:04:01" vendor-id="0" />
 	
 	<AVP code="278" value="18" vendor-id="0" />
 	

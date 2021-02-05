@@ -214,8 +214,8 @@ if __name__ == "__main__":
     start_date = "2020-01-01T00:00:00.000Z" 
     # input_ = input('Enter Customer Type: ')       
     input_dict = {'C1':['Basic','Data'],'C2':['Basic','Voice','Data'],'C3':['Basic','Data','Data_Roaming'],'C4':['Basic','Voice','Voice_Roaming','Data'],'C5':['Unlimited']}
-    menu_dict = {'C1':15,'C2':20,'C3':25,'C4':35,'C5':5}
-    msisdn = 8455953409
+    menu_dict = {'C1':20,'C2':20,'C3':20,'C4':0,'C5':0}
+    msisdn = 919676553302
     customer_count = 1
     for key in menu_dict:
         for i in range(1,menu_dict[key]+1):

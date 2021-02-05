@@ -83,19 +83,22 @@ sh -x csvoice3.sh
         # print("Customer type = {}\nCustomer Range = ({} - {})".format(key,val[0],val[1]))
         initial_msisdn = val[0]
         final_msisdn = val[1]
-        # for i in range(initial_msisdn,final_msisdn+1):
-        #     # print('Customer type = {}\tCustomer msisdn = {}'.format(key,i))
-        #     pp.pprint(changes_dict)
-        #     changes_dict['firstmsisdn'] = i
-        #     changes_dict['lastmsisdn'] = i
-        #     changes_dict['NumberOfDays'] = rd.randint(sms_event_ranges_dict[key][0],sms_event_ranges_dict[key][1])
-        #     edited_code = edit_sh_file(base_code_sms,changes_dict)
-        #     with open('all3.sh','w') as shell_file:
-        #         shell_file.write(edited_code)
-        #     os.system('./all3.sh')
-        #     with open('all3.sh','r') as shell_file:
-        #         print(shell_file.read())
-	
+
+#       sms generation loop         
+        for i in range(initial_msisdn,final_msisdn+1):
+            # print('Customer type = {}\tCustomer msisdn = {}'.format(key,i))
+            pp.pprint(changes_dict)
+            changes_dict['firstmsisdn'] = i
+            changes_dict['lastmsisdn'] = i
+            changes_dict['NumberOfDays'] = rd.randint(sms_event_ranges_dict[key][0],sms_event_ranges_dict[key][1])
+            edited_code = edit_sh_file(base_code_sms,changes_dict)
+            with open('all3.sh','w') as shell_file:
+                shell_file.write(edited_code)
+            os.system('./all3.sh')
+            with open('all3.sh','r') as shell_file:
+                print(shell_file.read())
+
+#       voice-call generation loop         	
         for i in range(initial_msisdn,final_msisdn+1):
             # print('Customer type = {}\tCustomer msisdn = {}'.format(key,i))
             pp.pprint(changes_dict)

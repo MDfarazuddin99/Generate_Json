@@ -1,0 +1,48 @@
+{
+    "resource": {
+        "customerTask": {
+            "initializationTasks": [
+                {
+                    "initializationTaskItems": [
+                        {
+                            "externalId": "CashAccountCenter",
+                            "amount": {
+                                "amount": {
+                                    "number": 105705,
+                                    "decimalPlaces": 2
+                                },
+                                "units": "usd"
+                            },
+                            "specId": "1EF88A0C4BDE4263A162829D4EE4DFCC",
+                            "declarationOfIntent": {
+                                "specId": "299A7E523B9D4EABAC6108040FDD93F9",
+                                "retainCredit": "TRUE",
+                                "characteristicValueSets": [
+                                    {
+                                        "characteristicValues": [
+                                            {
+                                                "characteristicSpecId": "B46E76E78C4244239130887A780F0F95",
+                                                "values": [
+                                                    {
+                                                        "value": "OnCycle-907-1"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "specId": "172C51D326C54E9EA3703F87F571F865",
+                    "externalId": "afdvavzv"
+                }
+            ],
+            "customerId": "566A7E03270A41F8B9A6FE72BE307A16"
+        },
+        "transactionDate": "2021-02-05T07:05:16.637Z",
+        "sourceName": "gdfbfgbfg",
+        "transactionTypeId": "Payment",
+        "id": "f504d7fb-8cba-444e-a5e0-712019f80d01"
+    }
+}

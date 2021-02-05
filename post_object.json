@@ -1,0 +1,47 @@
+{
+    "resource": {
+        "customerTask": {
+            "initializationTasks": [
+                {
+                    "initializationTaskItems": [
+                        {
+                            "externalId": "CashAccountCenter",
+                            "amount": {
+                                "amount": {
+                                    "number": 74530,
+                                    "decimalPlaces": 2
+                                },
+                                "units": "usd"
+                            },
+                            "specId": "1EF88A0C4BDE4263A162829D4EE4DFCC",
+                            "declarationOfIntent": {
+                                "specId": "299A7E523B9D4EABAC6108040FDD93F9",
+                                "retainCredit": "TRUE",
+                                "characteristicValueSets": [
+                                    {
+                                        "characteristicValues": [
+                                            {
+                                                "characteristicSpecId": "B46E76E78C4244239130887A780F0F95",
+                                                "values": [
+                                                    {
+                                                        "value": "OnCycle-580-1"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "specId": "172C51D326C54E9EA3703F87F571F865",
+                    "externalId": "PaymentJan"
+                }
+            ],
+            "customerId": "2FFB69B78B2F4C8F9DBFE1377330A74D"
+        },
+        "transactionDate": "2021-01-14T06:55:08.675Z",
+        "transactionTypeId": "Payment",
+        "id": "ca406686-dd7f-4bcf-9e74-e8df7cfe20f9"
+    }
+}

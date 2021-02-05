@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <RequestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema/diameterRequest.xsd">
 
-	<AVP code="263" value="${Local.session}.set(${Global.sessionID}-vari1_GmwmZhGbT5uhUXUYJkVrQ6-${Global.step})" vendor-id="0" />
+	<AVP code="263" value="${Local.session}.set(${Global.sessionID}-vari1_mdpXZw7YVCTWt9xXn8fFUL-${Global.step})" vendor-id="0" />
 	
 	
 	
@@ -20,7 +20,7 @@
 	
 	<AVP code="455" value="1" />
 	
-	<AVP code="55" value="CEST: 2020-01-30 08:02:01" vendor-id="0" />
+	<AVP code="55" value="CEST: 2020-01-30 08:04:01" vendor-id="0" />
 	
 	
 	

@@ -214,8 +214,10 @@ if __name__ == "__main__":
     start_date = "2020-01-01T00:00:00.000Z" 
     # input_ = input('Enter Customer Type: ')       
     input_dict = {'C1':['Basic','Data'],'C2':['Basic','Voice','Data'],'C3':['Basic','Data','Data_Roaming'],'C4':['Basic','Voice','Voice_Roaming','Data'],'C5':['Unlimited']}
-    menu_dict = {'C1':20,'C2':20,'C3':20,'C4':0,'C5':0}
-    msisdn = 919676553302
+    # Menu Dict is for how many customers you need for each type.
+    menu_dict = {'C1':3,'C2':3,'C3':3,'C4':0,'C5':0}
+    # Here enter your starting phone-number/Msisdn
+    msisdn = 918208391885
     customer_count = 1
     for key in menu_dict:
         for i in range(1,menu_dict[key]+1):

@@ -91,6 +91,7 @@ sh -x csvoice3.sh
             changes_dict['firstmsisdn'] = i
             changes_dict['lastmsisdn'] = i
             changes_dict['NumberOfDays'] = rd.randint(sms_event_ranges_dict[key][0],sms_event_ranges_dict[key][1])
+            changes_dict['StepSize'] = (30*24*60*60*1000)//changes_dict['NumberOfDays']
             edited_code = edit_sh_file(base_code_sms,changes_dict)
             with open('all3.sh','w') as shell_file:
                 shell_file.write(edited_code)
@@ -105,6 +106,7 @@ sh -x csvoice3.sh
             changes_dict['firstmsisdn'] = i
             changes_dict['lastmsisdn'] = i
             changes_dict['NumberOfDays'] = rd.randint(voice_event_ranges_dict[key][0],voice_event_ranges_dict[key][1])
+            changes_dict['StepSize'] = (30*24*60*60*1000)//changes_dict['NumberOfDays']
             edited_code = edit_sh_file(base_code_voice,changes_dict)
             with open('all3.sh','w') as shell_file:
                 shell_file.write(edited_code)

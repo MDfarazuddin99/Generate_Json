@@ -13,7 +13,7 @@ export lastmsisdn
 export SlotTime
 export StepSize
 
-#sh -x cssms3.sh
-sh -x csvoice3.sh
+sh -x cssms3.sh
+# sh -x csvoice3.sh
 #sh -x pssms3.sh
     

@@ -2,7 +2,7 @@ import requests
 import json
 import numpy as np
 
-for i in range(919676553305,919676553305+1):
+for i in range(918208391886,918208391894+1):
     msisdn = i
     end_point_internal_id = 'http://vmr-inv-0006.ete.ka.sw.ericsson.se:13080/cpm/business/v1/readCustomerExtId/extId/customer/{}'.format(msisdn)
     header = {'Accept':'application/json','ERICSSON.Partition-Id':'1'}

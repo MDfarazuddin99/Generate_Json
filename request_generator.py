@@ -1,6 +1,7 @@
 import requests
 import json
 import os
+
 def make_post_request(json_file):
     end_point = 'http://vmr-inv-0006.ete.ka.sw.ericsson.se:13080/cpm/business/v1/createCustomerOnboarding/customer/'
     with open(json_file,'r') as json_file:
